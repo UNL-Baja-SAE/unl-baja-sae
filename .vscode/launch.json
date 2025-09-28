@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "opera",
+            "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
             "file": "c:\\Users\\legom\\unl-baja-sae\\index.html"

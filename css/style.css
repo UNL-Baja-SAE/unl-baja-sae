@@ -260,7 +260,7 @@ img{
 .hero-text {
     font-size:clamp(6rem,4rem,8rem);
     font-weight: 900;
-    color: #d00000;
+    color: #D00000;
     /* Husker red */
     line-height: 1.1;
 }
@@ -428,6 +428,12 @@ input[type="radio"]:checked + .btn {
   background-color: #D00000;
   color: #fff;
 }
+#desc-img{
+     max-width: 100%;
+  max-height: 292px; /* maintains 3:2 ratio at 18rem width */
+  object-fit: cover; /* or contain, depending on how you want cropping */
+  display: block;
+}
 /* Unique positions for each button on desktop */
 #btn-body {
     top: 76%;
@@ -462,6 +468,10 @@ input[type="radio"]:checked + .btn {
 }
 .card-text{
     min-height: 8rem;
+}
+
+.card h5{
+    color: #D00000;
 }
 
 /* Tablet adjustments */
