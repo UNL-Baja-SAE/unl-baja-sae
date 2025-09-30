@@ -1,4 +1,3 @@
-/* Reset */
 html,
 body {
     margin: 0;
@@ -6,34 +5,30 @@ body {
     height: 100%;
 }
 
-/* General body styling */
 body {
     font-family: "Roboto Condensed", 'Liberation Sans Narrow', Arial, sans-serif;
     line-height: 1.6;
     font-weight: 500;
     background: #F5F1E7;
+
     color: #333;
 }
 
-/* Reset heading and paragraph margins slightly */
 h1,
 p {
     margin: 0 0 10px 0;
     padding: 0;
 }
 
-/* Navbar container */
 .navbar-container {
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 100%;
 }
 
-/* Navbar */
 #mainNavbar {
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
-    /* defined transparent bg (prevents jump) */
     box-shadow: none;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -43,14 +38,12 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar brand */
 .navbar-brand {
     font-size: 2rem;
     font-weight: 700;
     color: #D00000 !important;
 }
 
-/* Nav links */
 .navbar-nav .nav-link {
     background: linear-gradient(to top, #aaa 50%, #ffffff00 50%);
     border-radius: var(--bs-border-radius-pill);
@@ -67,7 +60,6 @@ p {
     color: #D00000 !important;
 }
 
-/* Toggler */
 .navbar-toggler {
     position: relative;
     top: 0;
@@ -75,7 +67,6 @@ p {
     z-index: 1050;
 }
 
-/* Mobile navbar */
 @media (max-width: 991.98px) {
     .navbar-collapse {
         position: absolute;
@@ -94,12 +85,12 @@ p {
         padding-right: 0.5rem;
         transition: none;
     }
-    #mainNavbar{
-            padding-right: 1rem;
+
+    #mainNavbar {
+        padding-right: 1rem;
     }
 }
 
-/* Content */
 .content {
     padding: 2rem;
     background: white;
@@ -109,7 +100,6 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 .site-footer {
     background: #222;
     color: #aaa;
@@ -118,10 +108,6 @@ p {
     margin-top: 2rem;
 }
 
-/* Fullscreen hero image */
-
-
-/* Page title container */
 .heading-wrapper {
     text-align: center;
 }
@@ -175,10 +161,8 @@ p {
     color: #000;
 }
 
-/* bronze */
 
 
-/* About page content container */
 .content-container {
     background-color: white;
     border-radius: 50px;
@@ -196,16 +180,20 @@ p {
     margin-bottom: 1rem;
 }
 
-img{
+img {
     object-fit: cover;
     object-position: center;
-    width: 100%;
+ 
 }
-.main-img{
-    display:block;
+
+.main-img {
+    display: block;
     margin: 0 auto;
-    max-width: 900px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 400px;
 }
+
 .hero {
     position: relative;
     width: 100%;
@@ -220,27 +208,23 @@ img{
     object-position: center right;
     display: block;
 }
-.container-heading{
-    display:inline-block
+
+.container-heading {
+    display: inline-block
 }
+
 .hero-text-container {
     position: absolute;
     top: 50%;
     left: 0;
-    /* start at left edge */
     transform: translateY(-50%);
-    /* vertical center */
     background-color: #ffffffc9;
-    /* cream color */
     border-radius: 0 30px 30px 0;
-    /* only round the right corners */
     padding: 1.5rem 2rem;
     width: 45vw;
-    /* about a third of viewport width */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     opacity: 0;
     animation: slideIn 1s forwards 0.3s;
-    /* slide in from left */
 }
 
 /* Slide-in animation */
@@ -256,16 +240,13 @@ img{
     }
 }
 
-/* Text inside */
 .hero-text {
-    font-size:clamp(6rem,4rem,8rem);
+    font-size: clamp(6rem, 4rem, 8rem);
     font-weight: 900;
     color: #D00000;
-    /* Husker red */
     line-height: 1.1;
 }
 
-/* Mobile adjustments */
 @media (max-width: 576px) {
     .hero-text-container {
         width: 90vw;
@@ -282,9 +263,7 @@ img{
     .hero-wrapper {
         width: 100%;
         height: 100vh;
-        /* or whatever height you want */
         overflow: hidden;
-        /* hides cropped parts */
         position: relative;
     }
 
@@ -294,7 +273,6 @@ img{
         object-fit: cover;
         object-position: 90% 50%;
         transform: translateY(-10%);
-        /* crop 50px off the top */
     }
 
     .hero-image {
@@ -303,11 +281,11 @@ img{
         display: block;
     }
 
-      .content-container {
-    max-width: calc(100vw - 1rem); /* 2rem = desired space */
-    margin: 0 auto; /* center it */
-  }
-    
+    .content-container {
+        max-width: calc(100vw - 1rem);
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -320,71 +298,61 @@ img{
     color: #aaa;
     font-size: 1.5rem;
     text-decoration: none;
-    /* <-- remove underline */
-
     transition: color 0.3s ease;
 }
 
 .site-footer a.footer-icon:hover {
     color: #D00000;
-    /* Husker red */
 }
 
 .carousel-inner img {
     max-width: 800px;
-    /* limits width */
     margin: 0 auto;
-    /* centers the image */
     object-fit: cover;
-    /* keeps aspect ratio */
 }
 
 .btn-outline-husker {
-  color: #D00000;               
-  border-color: #D00000;         
-  background-color: transparent;
-  transition: all 0.3s ease;    
+    color: #D00000;
+    border-color: #D00000;
+    background-color: transparent;
+    transition: all 0.3s ease;
 }
 
 .btn-outline-husker:hover,
 .btn-outline-husker:focus {
-  color: white;                 
-  background-color: #D00000;     
-  border-color: #D00000;
+    color: white;
+    background-color: #D00000;
+    border-color: #D00000;
 }
 
 
 .image-wrapper {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 
 
 
 
-/* Image wrapper floated left */
 .image-wrapper {
     float: left;
-    width: 60%; /* adjust width as needed */
-    margin-right: 2rem; /* space between image and card */
-    position: relative; /* keeps button and SVG in place */
+    width: 60%;
+    margin-right: 2rem;
+    position: relative;
 }
 
-/* Make main image responsive */
 .image-wrapper .main-img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Card floated left next to image */
-.content-container .card {
+#desc-card {
     float: left;
-    min-width: 35%; /* adjust width as needed */
+    min-width: 35%;
 }
 
-/* Clear floats after content container if needed */
 .content-container::after {
     content: "";
     display: table;
@@ -394,16 +362,17 @@ img{
 .image-wrapper svg {
     pointer-events: none;
 }
-/* Responsive: stack on small screens */
+
 @media (max-width: 768px) {
+
     .image-wrapper,
-    .content-container .card {
+    #desc-card {
         float: none;
         width: 100%;
-        margin: 0 0 1rem 0; /* spacing between stacked elements */
+        margin: 0 0 1rem 0;
     }
 }
-/* Base styles for all buttons */
+
 .image-wrapper .btn {
     position: absolute;
     font-size: clamp(0.75rem, 1.2vw, 1.2rem);
@@ -424,17 +393,19 @@ img{
     color: #fff;
 }
 
-input[type="radio"]:checked + .btn {
-  background-color: #D00000;
-  color: #fff;
+input[type="radio"]:checked+.btn {
+    background-color: #D00000;
+    color: #fff;
 }
-#desc-img{
-     max-width: 100%;
-  max-height: 292px; /* maintains 3:2 ratio at 18rem width */
-  object-fit: cover; /* or contain, depending on how you want cropping */
-  display: block;
+
+#desc-img {
+    max-width: 100%;
+    max-height: 253px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
-/* Unique positions for each button on desktop */
+
 #btn-body {
     top: 76%;
     left: 0%;
@@ -449,6 +420,7 @@ input[type="radio"]:checked + .btn {
     top: 81%;
     left: 80%;
 }
+
 #btn-drivetrain {
     top: 65%;
     left: 0%;
@@ -463,36 +435,159 @@ input[type="radio"]:checked + .btn {
     top: 21%;
     left: 81%;
 }
-.card{
+
+#desc-card {
     width: 18rem;
 }
-.card-text{
+
+.card-text {
     min-height: 8rem;
 }
 
-.card h5{
+.card h5 {
     color: #D00000;
 }
 
-/* Tablet adjustments */
-@media (max-width: 768px) {
-    .image-wrapper .btn{
-padding: 0.2rem 0.5rem;
-    }
-    #btn-body { top: 75%; left: 0%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-electronics { top: 9%; left: 80%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-susp { top: 81%; left: 78%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-drivetrain { top: 65%; left: 0%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-chassis { top: 15%; left: 0%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-controls { top: 21%; left: 81%; font-size: clamp(0.7rem, 2vw, 1rem); }
+.team-img {
+    max-height: 17rem;
 }
 
-/* Mobile adjustments */
+@media (max-width: 768px) {
+    .image-wrapper .btn {
+        padding: 0.2rem 0.5rem;
+    }
+
+    #btn-body {
+        top: 75%;
+        left: 0%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-electronics {
+        top: 9%;
+        left: 80%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-susp {
+        top: 81%;
+        left: 78%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-drivetrain {
+        top: 65%;
+        left: 0%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-chassis {
+        top: 15%;
+        left: 0%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-controls {
+        top: 21%;
+        left: 81%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+}
+
 @media (max-width: 480px) {
-    #btn-body { top: 75%; left: 0%; font-size: clamp(0.65rem, 2.5vw, 0.9rem); }
-    #btn-electronics { top: 8%; left: 81%; font-size: clamp(0.65rem, 2.5vw, 0.9rem); }
-    #btn-susp { top: 80%; left: 80%; font-size: clamp(0.65rem, 2.5vw, 0.9rem); }
-    #btn-drivetrain { top: 64%; left: 0%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-chassis { top: 14%; left: 0%; font-size: clamp(0.7rem, 2vw, 1rem); }
-    #btn-controls { top: 21%; left: 81%; font-size: clamp(0.7rem, 2vw, 1rem); }
+    #btn-body {
+        top: 75%;
+        left: 0%;
+        font-size: clamp(0.65rem, 2.5vw, 0.9rem);
+    }
+
+    #btn-electronics {
+        top: 8%;
+        left: 81%;
+        font-size: clamp(0.65rem, 2.5vw, 0.9rem);
+    }
+
+    #btn-susp {
+        top: 80%;
+        left: 80%;
+        font-size: clamp(0.65rem, 2.5vw, 0.9rem);
+    }
+
+    #btn-drivetrain {
+        top: 64%;
+        left: 0%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-chassis {
+        top: 14%;
+        left: 0%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    #btn-controls {
+        top: 21%;
+        left: 81%;
+        font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+}
+
+.section-heading {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    padding: 3rem 1rem;
+
+}
+
+.section-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 120%;
+    height: 100%;
+    padding: 3rem 1rem;
+    background: url("../images/svg (1).svg") no-repeat;
+    background-size: auto 100%;
+    background-position: left center;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.section-heading h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.heading-underline {
+    width: 80px;
+    height: 4px;
+    background-color: #D00000;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.logo { 
+    margin-top: 1rem;
+}
+
+.hidden-element {
+  opacity: 0;
+}
+@keyframes appear{
+from{
+    opacity: 0;
+    transform: translateY(50px);
+}
+to{
+    opacity: 1;
+        transform: translateY(0);
+}
+}
+.visible-element{
+  animation: appear 1s ease 0.3s forwards;
+
 }
