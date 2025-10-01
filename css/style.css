@@ -392,9 +392,11 @@ img {
 
         margin: 0 auto;
     }
-      #desc-card{
+
+    #desc-card {
         max-width: 100%;
-      }
+    }
+
     #desc-img {
         object-fit: contain;
     }
