@@ -575,7 +575,7 @@ input[type="radio"]:checked+.btn {
     width: 120%;
     height: 100%;
     padding: 3rem 1rem;
-    background: url("../images/svg (1).svg") no-repeat;
+    background: url("../images/tracks.svg") no-repeat;
     background-size: auto 100%;
     background-position: left center;
     opacity: 0.3;
