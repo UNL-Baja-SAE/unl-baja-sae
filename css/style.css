@@ -450,7 +450,7 @@ input[type="radio"]:checked+.btn {
     left: 80%;
 }
 
-#btn-drivetrain {
+#btn-powertrain {
     top: 65%;
     left: 0%;
 }
@@ -502,7 +502,7 @@ input[type="radio"]:checked+.btn {
         font-size: clamp(0.7rem, 2vw, 1rem);
     }
 
-    #btn-drivetrain {
+    #btn-powertrain {
         top: 65%;
         left: 0%;
         font-size: clamp(0.7rem, 2vw, 1rem);
@@ -540,7 +540,7 @@ input[type="radio"]:checked+.btn {
         font-size: clamp(0.65rem, 2.5vw, 0.9rem);
     }
 
-    #btn-drivetrain {
+    #btn-powertrain {
         top: 64%;
         left: 0%;
         font-size: clamp(0.7rem, 2vw, 1rem);

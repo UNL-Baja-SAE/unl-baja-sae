@@ -1,4 +1,4 @@
-var headings = ["Body & Ergonomics","Electronics","Suspension","Drivetrain","Controls","Chassis"];
+var headings = ["Body & Ergonomics","Electronics","Suspension","Powertrain","Controls","Chassis"];
 var descriptons = [
     "Responsible for complete design of body.",
     "Responsible for brakes lights and driver console.",
