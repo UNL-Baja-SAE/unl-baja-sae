@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UNL Baja SAE</title>
+  <meta name="description"
+    content="UNL Baja SAE is a student organization at the University of Nebraska-Lincoln that designs and builds off-road vehicles for Baja SAE competitions.">
 
   <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -138,26 +140,27 @@
 
       <!-- Left: Image with button and lines -->
       <div class="image-wrapper">
-        <img class="diagram-img" src="images/PXL_20250925_191559867.jpeg" alt="Image of the Car">
+        <img class="diagram-img" src="images/PXL_20250925_191559867.jpg" alt="Image of the Car">
+        <fieldset>
+          <legend class="visually-hidden">Select a car subsystem</legend>
+          <input type="radio" id="radio-body" name="car-part" value=0 hidden>
+          <label for="radio-body" id="btn-body" class="btn">Body & Ergonomics</label>
 
-        <input type="radio" id="radio-body" name="car-part" value=0 hidden>
-        <label for="radio-body" id="btn-body" class="btn">Body & Ergonomics</label>
+          <input type="radio" id="radio-electronics" name="car-part" value=1 hidden>
+          <label for="radio-electronics" id="btn-electronics" class="btn">Electronics</label>
 
-        <input type="radio" id="radio-electronics" name="car-part" value=1 hidden>
-        <label for="radio-electronics" id="btn-electronics" class="btn">Electronics</label>
+          <input type="radio" id="radio-susp" name="car-part" value=2 hidden>
+          <label for="radio-susp" id="btn-susp" class="btn">Suspension</label>
 
-        <input type="radio" id="radio-susp" name="car-part" value=2 hidden>
-        <label for="radio-susp" id="btn-susp" class="btn">Suspension</label>
+          <input type="radio" id="radio-powertrain" name="car-part" value=3 hidden>
+          <label for="radio-powertrain" id="btn-powertrain" class="btn">Powertrain</label>
 
-        <input type="radio" id="radio-powertrain" name="car-part" value=3 hidden>
-        <label for="radio-powertrain" id="btn-powertrain" class="btn">Powertrain</label>
+          <input type="radio" id="radio-controls" name="car-part" value=4 hidden>
+          <label for="radio-controls" id="btn-controls" class="btn">Controls</label>
 
-        <input type="radio" id="radio-controls" name="car-part" value=4 hidden>
-        <label for="radio-controls" id="btn-controls" class="btn">Controls</label>
-
-        <input type="radio" id="radio-chassis" name="car-part" value=5 hidden>
-        <label for="radio-chassis" id="btn-chassis" class="btn">Chassis</label>
-
+          <input type="radio" id="radio-chassis" name="car-part" value=5 hidden>
+          <label for="radio-chassis" id="btn-chassis" class="btn">Chassis</label>
+        </fieldset>
 
         <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
           <line x1="50%" y1="50%" x2="35%" y2="80%" stroke="black" stroke-width="2"></line>
@@ -181,13 +184,14 @@
       </div>
 
       <!-- Right: Card -->
-      <div class="card h-100" id="desc-card">
+      <div class="card h-100" id="desc-card" aria-live="polite">
         <img src="images/480689290_1175452174585236_8100909974217842168_n.jpg" class="card-img-top" id="desc-img"
-          alt="...">
+          alt="Image related to subsystem">
         <div class="card-body">
           <h5 class="card-title" id="desc-title">Subsytem</h5>
           <p class="card-text" id="desc-text">Select a subsystem to learn more about it!</p>
-          <a href="subsystems/" id="desc-info" class="btn btn-outline-husker">Learn more</a>
+          <a href="subsystems/" id="desc-info" class="btn btn-outline-husker"
+            aria-label="Learn more about subsystems">Learn more</a>
         </div>
       </div>
 
@@ -202,13 +206,15 @@
   <footer class="site-footer mt-5 py-4">
     <div class="container text-center">
       <div class="mb-2">
-        <a href="https://www.facebook.com/huskerracing" target="_blank" class="footer-icon me-3">
+        <a href="https://www.facebook.com/huskerracing" target="_blank" class="footer-icon me-3" alt="Facebook"
+          aria-label="Facebook">
           <i class="bi bi-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/husker_baja" target="_blank" class="footer-icon me-3">
+        <a href="https://www.instagram.com/husker_baja" target="_blank" class="footer-icon me-3" alt="Instagram"
+          aria-label="Instagram">
           <i class="bi bi-instagram"></i>
         </a>
-        <a href="mailto:huskerracing@gmail.com" class="footer-icon">
+        <a href="mailto:huskerracing@gmail.com" class="footer-icon" alt="Mail" aria-label="Mail">
           <i class="bi bi-envelope-fill"></i>
         </a>
       </div>
