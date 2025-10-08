@@ -1,11 +1,11 @@
 var headings = ["Body & Ergonomics","Electronics","Suspension","Powertrain","Controls","Chassis"];
 var descriptons = [
-    "Responsible for complete design of body.",
-    "Responsible for brakes lights and driver console.",
-    "Responsible for complete design and analysis of suspension.",
-    "Responsible for complete design and analysis of clutches, gearbox, and driveshafts.",
-    "Responsible for complete design of driver controls (Steering, Brakes, Throttle).",
-    "Responsible for complete design and analysis of chassis."];
+    "We design the car’s body for comfort, safety, and a professional look. Using carbon fiber, we build strong, lightweight components that protect the driver and internal systems.",
+    "Our team wires the car for essential systems like kill switches and brake lights. We also innovate with custom displays and electronic upgrades to enhance performance.",
+    "We design and tune the suspension to handle rough terrain with control and stability. Every part is modeled and tested to balance strength, weight, and performance.",
+    "We convert engine power into motion with a custom gearbox, CVT, and 4x4 drivetrain. Each part is optimized for strength, torque, and efficiency.",
+    "The controls system ensures safe steering and braking through precision-engineered components. We focus on durability and reliability to perform under tough race conditions.",
+    "Our chassis team builds the frame that holds everything together. It’s engineered to be lightweight, strong, and fully compliant with SAE safety standards."];
 var images = ["images/IMG_2154.JPG","images/IMG_2583.JPG","images/IMG_2016.JPG","images/IMG_2267.JPG","images/IMG_2066.JPG","images/IMG_1994.JPG"];
 
   document.querySelectorAll('input[name="car-part"]').forEach(radio => {
