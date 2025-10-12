@@ -6,7 +6,7 @@ var descriptons = [
     "We convert engine power into motion with a custom gearbox, CVT, and 4x4 drivetrain. Each part is optimized for strength, torque, and efficiency.",
     "The controls system ensures safe steering and braking through precision-engineered components. We focus on durability and reliability to perform under tough race conditions.",
     "Our chassis team builds the frame that holds everything together. It’s engineered to be lightweight, strong, and fully compliant with SAE safety standards."];
-var images = ["images/IMG_2154.JPG","images/IMG_2583.JPG","images/IMG_2016.JPG","images/IMG_2267.JPG","images/IMG_2066.JPG","images/IMG_1994.JPG"];
+var images = ["images/IMG_2154.JPG","images/IMG_2583.JPG","images/PXL_20251010_000837776.MP (1).jpg","images/PXL_20251009_235149453.MP (1).jpg","images/IMG_2066.JPG","images/IMG_1994.JPG"];
 
   document.querySelectorAll('input[name="car-part"]').forEach(radio => {
     radio.addEventListener("change", () => {

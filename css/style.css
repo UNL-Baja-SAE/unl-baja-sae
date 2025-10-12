@@ -376,7 +376,17 @@ img {
     display: table;
     clear: both;
 }
-
+.content-container h1{
+    color:#ae1100
+}
+.heading-line {
+    border: none;                 /* remove default border */
+    height: 3px;                  /* thickness */
+    background-color: #a10;    /* matches your theme */
+    margin: 0.5rem 0 1rem 0;      /* spacing above/below */
+    border-radius: 2px;    
+    opacity:100%;       /* subtle rounding */
+}
 .image-wrapper svg {
     pointer-events: none;
 }
@@ -620,3 +630,81 @@ input[type="radio"]:checked+.btn {
     animation: appear 1s ease 0.3s forwards;
 
 }
+
+
+/* Unique Baja-themed accordion styling */
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-accordion .accordion-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.custom-accordion .accordion-button {
+  background: linear-gradient(135deg, #a00, #c33);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.custom-accordion .accordion-button.collapsed {
+  background: #f8f9fa;
+  color: #a00;
+  border-top: 3px solid #a00;
+}
+
+.custom-accordion .accordion-button i {
+  font-size: 1.3rem;
+}
+
+.custom-accordion .accordion-body {
+  background-color: #fff;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  border-top: 1px solid #eee;
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  filter: invert(1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .accordion-collapse {
+    transition: height 0.4s ease;
+  }
+}
+
+.icon svg {
+  width: 1.25em;        /* same relative size as Bootstrap icons */
+  height: 1.25em;
+  vertical-align: middle;
+  fill: currentColor;   /* makes it adopt the text color */
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+
+
+          .icon.collapsed{
+            color: #fff;
+            /* controls the SVG color */
+            font-size: 1.5rem;
+            /* controls the size */
+          }
+                    .icon.colapsed{
+            color: #a00;
+            /* controls the SVG color */
+            font-size: 1.5rem;
+            /* controls the size */
+          }
