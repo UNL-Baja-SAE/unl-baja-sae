@@ -167,6 +167,7 @@ p {
     background-color: white;
     border-radius: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1250px;
 }
 
 .content-container h1 {
@@ -196,8 +197,7 @@ img {
 .diagram-img {
     display: block;
     margin: 0 auto;
-    max-width: 900px;
-    width: 100%;
+    max-width: 700px;
 }
 
 
@@ -236,7 +236,6 @@ img {
     animation: slideIn 1s forwards 0.3s;
 }
 
-/* Slide-in animation */
 @keyframes slideIn {
     from {
         transform: translateY(-50%) translateX(-100%);
@@ -315,7 +314,7 @@ img {
 }
 
 .carousel-inner img {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
     object-fit: cover;
 }
@@ -376,17 +375,20 @@ img {
     display: table;
     clear: both;
 }
-.content-container h1{
-    color:#ae1100
+
+.content-container h1 {
+    color: #ae1100
 }
+
 .heading-line {
-    border: none;                 /* remove default border */
-    height: 3px;                  /* thickness */
-    background-color: #a10;    /* matches your theme */
-    margin: 0.5rem 0 1rem 0;      /* spacing above/below */
-    border-radius: 2px;    
-    opacity:100%;       /* subtle rounding */
+    border: none;
+    height: 3px;
+    background-color: #a10;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    opacity: 100%;
 }
+
 .image-wrapper svg {
     pointer-events: none;
 }
@@ -438,7 +440,7 @@ input[type="radio"]:checked+.btn {
 
 #desc-img {
     max-width: 100%;
-    max-height: 18rem;
+    height: 18rem;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -632,79 +634,195 @@ input[type="radio"]:checked+.btn {
 }
 
 
-/* Unique Baja-themed accordion styling */
 .custom-accordion .accordion-item {
-  border: none;
-  margin-bottom: 1rem;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .custom-accordion .accordion-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .custom-accordion .accordion-button {
-  background: linear-gradient(135deg, #a00, #c33);
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding: 1.2rem;
-  letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #a00, #c33);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    letter-spacing: 0.5px;
 }
 
 .custom-accordion .accordion-button.collapsed {
-  background: #f8f9fa;
-  color: #a00;
-  border-top: 3px solid #a00;
+    background: #f8f9fa;
+    color: #a00;
+    border-top: 3px solid #a00;
 }
 
 .custom-accordion .accordion-button i {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .custom-accordion .accordion-body {
-  background-color: #fff;
-  padding: 1.5rem;
-  font-size: 1rem;
-  line-height: 1.7;
-  border-top: 1px solid #eee;
+    background-color: #fff;
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-top: 1px solid #eee;
 }
 
 .custom-accordion .accordion-button:not(.collapsed)::after {
-  filter: invert(1);
+    filter: invert(1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .accordion-collapse {
-    transition: height 0.4s ease;
-  }
+    .accordion-collapse {
+        transition: height 0.4s ease;
+    }
 }
 
 .icon svg {
-  width: 1.25em;        /* same relative size as Bootstrap icons */
-  height: 1.25em;
-  vertical-align: middle;
-  fill: currentColor;   /* makes it adopt the text color */
-  display: inline-block;
-  transition: transform 0.2s ease;
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+    fill: currentColor;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.custom-accordion .accordion-button:focus {
+    box-shadow: 0 0 0 0.15rem rgba(208, 0, 0, 0.5);
+    outline: none;
 }
 
 
+.icon.collapsed {
+    color: #fff;
+    font-size: 1.5rem;
+}
 
-          .icon.collapsed{
-            color: #fff;
-            /* controls the SVG color */
-            font-size: 1.5rem;
-            /* controls the size */
-          }
-                    .icon.colapsed{
-            color: #a00;
-            /* controls the SVG color */
-            font-size: 1.5rem;
-            /* controls the size */
-          }
+.icon.colapsed {
+    color: #a00;
+    font-size: 1.5rem;
+}
+
+.container-2 {
+    background-color: #a60000;
+    height: auto;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container-2 h2 {
+    border-radius: 0 0 1rem 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ffffff;
+    width: calc(fit-content);
+    display: inline;
+    color: #D00000;
+    text-align: center;
+
+}
+
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%);
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.carousel-control-prev .carousel-control-next {
+    z-index: 1000;
+}
+
+.carousel-item .col {
+    background-color: #a10;
+}
+
+.pic-col {
+    width: 33.33%;
+    padding: 1rem;
+
+
+}
+
+
+.img-cont {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.img-cont img {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.countdown {
+    font-size: clamp(1rem, 1vw, 10rem);
+    text-align: center;
+    color: #a10;
+}
+
+.counter .countdown {
+    color: #fff;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+
+.countdown-desc {
+    text-align: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 0px;
+
+    margin-top: 0px;
+}
+
+
+.counter {
+    border-radius: 16px;
+    background-color: #a00;
+}
+
+.countdown {
+    margin: 0;
+    /* remove any default margin */
+    padding: 0;
+    /* remove padding if any */
+}
+
+.countdown-desc {
+    margin: 2px 0 0 0;
+    /* tiny top margin, adjust to taste */
+    padding: 0;
+    font-size: 1rem;
+    /* optional: smaller label */
+}
