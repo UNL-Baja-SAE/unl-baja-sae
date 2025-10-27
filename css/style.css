@@ -530,6 +530,10 @@ input[type="radio"]:checked+.btn {
         left: 81%;
         font-size: clamp(0.7rem, 2vw, 1rem);
     }
+    .countdown{
+            font-size: clamp(1rem, 1vw, 10rem);
+
+    }
 }
 
 @media (max-width: 480px) {
@@ -785,7 +789,7 @@ input[type="radio"]:checked+.btn {
 }
 
 .countdown {
-    font-size: clamp(1rem, 1vw, 10rem);
+    font-size: 10rem;
     text-align: center;
     color: #a10;
 }
