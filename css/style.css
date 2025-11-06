@@ -462,7 +462,9 @@ input[type="radio"]:checked+.btn {
 }
 
 .team-img {
-    max-height: 215px;
+    text-align: center;
+    justify-content: center;
+    height: 215px;
 }
 
 /* Countdown */
@@ -477,7 +479,7 @@ input[type="radio"]:checked+.btn {
     color: var(--color-secondary);
     margin-bottom: 0;
     padding-bottom: 0;
-     margin-top: -2rem;
+   
 }
 
 .countdown-container .row {
@@ -490,7 +492,7 @@ input[type="radio"]:checked+.btn {
     color: var(--color-secondary);
     padding-top: 0;
     font-size: 1rem;
-    margin-top: -3rem;
+   
 }
 
 /* Counters */
@@ -557,7 +559,15 @@ input[type="radio"]:checked+.btn {
     justify-content: center;
     align-items: center;
 }
-
+@media (min-width: 768px){
+    .countdown-desc{
+        
+     margin-top: -3rem;
+    }
+    .countdown{
+          margin-top: -2rem;
+    }
+}
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .semi-colon {
@@ -572,6 +582,7 @@ input[type="radio"]:checked+.btn {
     .counter .countdown-desc {
         font-size: 0.9rem;
     }
+    
 
 
 }
@@ -582,8 +593,13 @@ input[type="radio"]:checked+.btn {
         font-size: 3rem !important;
     }
 
-    .counter .countdown {
-        font-size: 2rem;
+     .countdown {
+        font-size: 3rem;
+        margin-top: -1rem;
+    }
+        .countdown-desc {
+        margin-top: -0.5rem;
+        margin-bottom: -0.5rem;
     }
 
     .countdown-container {
