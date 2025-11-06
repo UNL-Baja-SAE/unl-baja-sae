@@ -26,19 +26,21 @@
 
   <link rel="preload" as="image" href="images/IMG_1737.jpg">
 
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap"
       rel="stylesheet">
   </noscript>
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
 
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   </noscript>
 
@@ -51,11 +53,11 @@
       <div class="container d-flex align-items-center navbar-container">
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active rounded-pill" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link rounded-pill" href="about/">About</a></li>
-            <li class="nav-item"><a class="nav-link rounded-pill" href="team/">Our Team</a></li>
-            <li class="nav-item"><a class="nav-link rounded-pill" href="subsystems/">Subsystems</a></li>
-            <li class="nav-item"><a class="nav-link rounded-pill" href="sponsors/">Sponsors</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="../about/">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="team/">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="subsystems/">Subsystems</a></li>
+            <li class="nav-item"><a class="nav-link" href="sponsors/">Sponsors</a></li>
           </ul>
         </div>
       </div>
@@ -74,17 +76,21 @@
         <img src="images/IMG_1737.jpg" alt="Husker Racing Baja SAE" class="hero-image">
       </div>
 
+
+
       <div class="hero-text-container">
         <div class="hero-text">
-          Husker Racing<br>Baja SAE
+          <span>Husker Racing</span><br>
+          <span>Baja SAE</span>
         </div>
       </div>
+
     </div>
     <div class="container content-container countdown-container mt-4 p-4 text-center">
       <h1>Countdown Until Competition</h1>
       <hr class="heading-line">
       <div class="row">
-        <div class="col align-items-center counter">
+        <div class="col-3 align-items-center counter">
           <div id="days-count" class="countdown">
             191
           </div>
@@ -92,13 +98,13 @@
             Days
           </div>
         </div>
-        <div class="col align-items-center">
-          <div class="countdown">
+        <div class="col-1 align-items-center">
+          <div class="countdown semi-colon">
             :
           </div>
 
         </div>
-        <div class="col align-items-center counter">
+        <div class="col-2 align-items-center counter">
           <div id="hours-count" class="countdown">
             21
           </div>
@@ -106,13 +112,13 @@
             Hours
           </div>
         </div>
-        <div class="col align-items-center">
-          <div class="countdown">
+        <div class="col-1 align-items-center">
+          <div class="countdown semi-colon">
             :
           </div>
 
         </div>
-        <div class="col align-items-center counter">
+        <div class="col-2 align-items-center counter">
           <div id="minutes-count" class="countdown">
             21
           </div>
@@ -120,13 +126,13 @@
             Minutes
           </div>
         </div>
-        <div class="col align-items-center">
-          <div class="countdown">
+        <div class="col-1 align-items-center">
+          <div class="countdown semi-colon">
             :
           </div>
 
         </div>
-        <div class="col align-items-center counter">
+        <div class="col-2 align-items-center counter">
           <div id="seconds-count" class="countdown">
             21
           </div>
@@ -138,7 +144,7 @@
 
     </div>
 
-    <div class="container content-container mt-4 p-4">
+    <div class="container content-container mt-4 p-4" data-aos="fade-up">
       <h2 style="color:#ae1100">About Husker Racing</h2>
 
       <p>Husker Racing at UNL is a 20+ year award-winning team offering students hands-on engineering experience,
@@ -147,9 +153,9 @@
     </div>
 
 
-    <div class="container-2 pb-4 mt-4">
+    <div class="container-2 pb-lg-5 pb-5 mt-4" data-aos="fade-right">
       <h2>Pictures</h2>
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-theme="dark">
+      <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
         <div class="carousel-inner">
 
@@ -214,19 +220,21 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span id="prev-btn" class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span id="next-btn" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
 
     <div class="container content-container mt-4 p-4">
-      <h1>Subsytems</h1>
+      <h1>Subsystems</h1>
       <hr class="heading-line">
       <!--Baja Car diagram-->
       <div class="image-wrapper">
@@ -316,6 +324,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ once: true });</script>
   <script src="js/index.js" defer></script>
   <script src="js/diagram.js" defer></script>
   <script src="js/countdown.js" defer></script>
