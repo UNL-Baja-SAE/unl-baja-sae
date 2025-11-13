@@ -26,7 +26,7 @@ function formatToPhone(val) {
 }
 const form = document.getElementById("contactForm");
 const statusDiv = document.getElementById("formStatus");
-
+const submitButton = document.getElementById("submit");
 console.log("Form script loaded, form:", form);
 
 form.addEventListener("submit", function (e) {
