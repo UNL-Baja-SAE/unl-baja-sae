@@ -3,7 +3,7 @@
     --color-primary-dark: #a10;
     --color-primary-darker: #a00;
     --color-secondary: #fff;
-    --color-background: #F5F1E7;
+    --color-background:#faf3e2;
     --color-dark: #222;
     --color-grey: #aaa;
     --color-black: #000;
@@ -192,9 +192,19 @@ p {
     background-color: var(--color-secondary);
     border-radius: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1250px;
+    
 }
-
+.accordion, .container-3, .content-container{
+    max-width: 1100px;
+}
+.paragraph-table{
+   font-family: "Roboto Condensed", 'Liberation Sans Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.container-3 h1{
+    text-align: center;
+color: var(--color-primary-darker);
+}
 .content-container h1 {
     text-align: center;
     color: var(--color-primary-dark);
@@ -766,11 +776,14 @@ input[type="radio"]:checked+.btn {
 .custom-accordion .accordion-button {
     background: linear-gradient(135deg, var(--color-primary-dark), #c33);
     color: var(--color-secondary);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
     text-transform: uppercase;
     padding: 1.2rem;
     letter-spacing: 0.5px;
+}
+.custom-accordion .faq .accordion-button{
+    text-transform: none;
 }
 
 .custom-accordion .accordion-button.collapsed {
@@ -996,10 +1009,11 @@ input[type="radio"]:checked+.btn {
         display: block;
     }
 
-    .content-container {
-        max-width: calc(100vw - 1rem);
+    .content-container, .accordion, .container-3 {
+        max-width: 95vw;
         margin: 0 auto;
     }
+    
 }
 
 
@@ -1041,4 +1055,13 @@ input[type="radio"]:checked+.btn {
 .form-control.is-valid, .was-validated .form-control:valid, .was-validated .form-select:valid  {
     background-image: none !important;
     padding-right: inherit;
+}
+
+.map-iframe{
+    max-width: 400px;
+    max-height: 300px;
+    width: calc(100vw - 15vw);
+    aspect-ratio: 4/3;
+    height: auto;
+
 }
