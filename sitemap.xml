@@ -9,29 +9,35 @@
 
 <url>
   <loc>https://unl-baja-sae.github.io/unl-baja-sae/</loc>
-  <lastmod>2025-10-01T16:02:27+00:00</lastmod>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://unl-baja-sae.github.io/unl-baja-sae/about/</loc>
-  <lastmod>2025-10-01T16:02:27+00:00</lastmod>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://unl-baja-sae.github.io/unl-baja-sae/join/</loc>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://unl-baja-sae.github.io/unl-baja-sae/team/</loc>
-  <lastmod>2025-10-01T16:02:27+00:00</lastmod>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unl-baja-sae.github.io/unl-baja-sae/subsystems/</loc>
-  <lastmod>2025-10-01T16:02:27+00:00</lastmod>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://unl-baja-sae.github.io/unl-baja-sae/sponsors/</loc>
-  <lastmod>2025-10-01T16:02:27+00:00</lastmod>
+  <lastmod>2026-1-15T16:02:27+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
 
 
 </urlset>
