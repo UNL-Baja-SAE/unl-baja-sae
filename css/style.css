@@ -3,7 +3,7 @@
     --color-primary-dark: #a10;
     --color-primary-darker: #a00;
     --color-secondary: #fff;
-    --color-background:#faf3e2;
+    --color-background: #faf3e2;
     --color-dark: #222;
     --color-grey: #aaa;
     --color-black: #000;
@@ -28,7 +28,9 @@ body {
 }
 
 
-p, .accordion-body, form {
+p,
+.accordion-body,
+form {
     font-family: "Roboto Condensed", 'Liberation Sans Narrow', Arial, sans-serif;
     font-weight: 500;
 
@@ -36,7 +38,7 @@ p, .accordion-body, form {
 
 h1,
 p {
-   
+
     padding: 0;
 }
 
@@ -49,10 +51,10 @@ p {
 
 #mainNavbar {
     width: 100%;
-   
+
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
-    padding-top:12px;
+    padding-top: 12px;
     padding-bottom: 1rem;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -66,7 +68,7 @@ p {
     position: relative;
 
     font-size: 2rem;
-    
+
     color: var(--color-primary) !important;
 }
 
@@ -192,19 +194,25 @@ p {
     background-color: var(--color-secondary);
     border-radius: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    
+
 }
-.accordion, .container-3, .content-container{
+
+.accordion,
+.container-3,
+.content-container {
     max-width: 1100px;
 }
-.paragraph-table{
-   font-family: "Roboto Condensed", 'Liberation Sans Narrow', Arial, sans-serif;
+
+.paragraph-table {
+    font-family: "Roboto Condensed", 'Liberation Sans Narrow', Arial, sans-serif;
     font-weight: 500;
 }
-.container-3 h1{
+
+.container-3 h1 {
     text-align: center;
-color: var(--color-primary-darker);
+    color: var(--color-primary-darker);
 }
+
 .content-container h1 {
     text-align: center;
     color: var(--color-primary-dark);
@@ -472,7 +480,7 @@ input[type="radio"]:checked+.btn {
 }
 
 .team-img {
- 
+
     object-fit: cover;
     object-position: center;
     height: 215px;
@@ -490,7 +498,7 @@ input[type="radio"]:checked+.btn {
     color: var(--color-secondary);
     margin-bottom: 0;
     padding-bottom: 0;
-   
+
 }
 
 .countdown-container .row {
@@ -503,7 +511,7 @@ input[type="radio"]:checked+.btn {
     color: var(--color-secondary);
     padding-top: 0;
     font-size: 1rem;
-   
+
 }
 
 /* Counters */
@@ -530,7 +538,7 @@ input[type="radio"]:checked+.btn {
 }
 
 .section-heading::before {
-    
+
     content: "";
     position: absolute;
     top: 0;
@@ -570,15 +578,18 @@ input[type="radio"]:checked+.btn {
     justify-content: center;
     align-items: center;
 }
-@media (min-width: 768px){
-    .countdown-desc{
-        
-     margin-top: -3rem;
+
+@media (min-width: 768px) {
+    .countdown-desc {
+
+        margin-top: -3rem;
     }
-    .countdown{
-          margin-top: -2rem;
+
+    .countdown {
+        margin-top: -2rem;
     }
 }
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .semi-colon {
@@ -593,7 +604,7 @@ input[type="radio"]:checked+.btn {
     .counter .countdown-desc {
         font-size: 0.9rem;
     }
-    
+
 
 
 }
@@ -604,11 +615,12 @@ input[type="radio"]:checked+.btn {
         font-size: 3rem !important;
     }
 
-     .countdown {
+    .countdown {
         font-size: 3rem;
         margin-top: -1rem;
     }
-        .countdown-desc {
+
+    .countdown-desc {
         margin-top: -0.5rem;
         margin-bottom: -0.5rem;
     }
@@ -782,7 +794,8 @@ input[type="radio"]:checked+.btn {
     padding: 1.2rem;
     letter-spacing: 0.5px;
 }
-.custom-accordion .faq .accordion-button{
+
+.custom-accordion .faq .accordion-button {
     text-transform: none;
 }
 
@@ -871,16 +884,6 @@ input[type="radio"]:checked+.btn {
 }
 
 
-.carousel,
-.carousel-inner{
-    width: 100%;
-    overflow-x: clip;
-    overflow-y: visible;
-
-}
-.carousel{
-    padding-bottom: 4rem;
-}
 
 .container-2 h2 {
     border-radius: 0 0 16px 16px;
@@ -895,46 +898,83 @@ input[type="radio"]:checked+.btn {
     width: fit-content;
 }
 
-/* Carousel */
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
 
 
 @media (min-width:768px) {
-
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33.33%);
-    }
-
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.33%);
-    }
-
-    .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start {
-        transform: translateX(0);
+    .carousel-slide {
+        width: 33.333%;
     }
 }
 
-.carousel-control-prev, .carousel-control-next{
-    align-items: end !important;
-    height: 93%;
-}
-
-
-
-#next-btn,
-#prev-btn {
-    background-color: rgb(0, 0, 0);
-    border-radius: 5px;
+.carousel-container {
     position: relative;
-   
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Hides the slides that are off-screen */
+    padding: 10px 0;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 33.333%;
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 100%; /* 1 slide takes full width */
+}
+
+@media (min-width: 768px) {
+    .carousel-slide {
+        width: 50%; /* 100% / 2 = 50% */
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-slide {
+        width: 33.333%; /* 100% / 3 = 33.3% */
+    }
+}
+
+/* Navigation Buttons (Red Circles) */
+.custom-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d00000; /* UNL Red */
+    color: white;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.custom-nav-btn:hover {
+    background-color: #000; /* Black on hover */
+}
+
+.prev-btn { left: 10px; }
+.next-btn {right:10px;}
+
+.carousel-slide img {
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    width: 100%;
 }
 
 .pic-col {
@@ -942,7 +982,7 @@ input[type="radio"]:checked+.btn {
     padding: 1rem;
     background-color: var(--color-primary-darker);
     height: 90%;
-    position:relative;
+    position: relative;
     z-index: 100;
 }
 
@@ -1009,11 +1049,13 @@ input[type="radio"]:checked+.btn {
         display: block;
     }
 
-    .content-container, .accordion, .container-3 {
+    .content-container,
+    .accordion,
+    .container-3 {
         max-width: 95vw;
         margin: 0 auto;
     }
-    
+
 }
 
 
@@ -1052,12 +1094,14 @@ input[type="radio"]:checked+.btn {
 }
 
 
-.form-control.is-valid, .was-validated .form-control:valid, .was-validated .form-select:valid  {
+.form-control.is-valid,
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
     background-image: none !important;
     padding-right: inherit;
 }
 
-.map-iframe{
+.map-iframe {
     max-width: 400px;
     max-height: 300px;
     width: calc(100vw - 15vw);
