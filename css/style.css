@@ -730,6 +730,12 @@ input[type="radio"]:checked+.btn {
     .countdown {
         font-size: clamp(1rem, 1vw, 10rem);
     }
+
+    .carousel-cell {
+    width: 95% !important; /* half-width */
+
+ 
+}
 }
 
 @media (max-width:480px) {
@@ -899,82 +905,20 @@ input[type="radio"]:checked+.btn {
 }
 
 
+.carousel-cell {
+  width: 32%; /* half-width */
 
-@media (min-width:768px) {
-    .carousel-slide {
-        width: 33.333%;
-    }
+ 
 }
 
-.carousel-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    /* Hides the slides that are off-screen */
-    padding: 10px 0;
-}
+.carousel-cell img{
+      object-fit: cover;
 
-.carousel-track {
-    display: flex;
+    border-radius: 11px;
+    object-position: center;
+    display: block;
     width: 100%;
-}
-
-.carousel-slide {
-    flex-shrink: 0;
-    padding: 0 10px;
-    width: 33.333%;
-}
-
-.carousel-slide {
-    flex-shrink: 0;
-    padding: 0 10px;
-    width: 100%; /* 1 slide takes full width */
-}
-
-@media (min-width: 768px) {
-    .carousel-slide {
-        width: 50%; /* 100% / 2 = 50% */
-    }
-}
-
-@media (min-width: 992px) {
-    .carousel-slide {
-        width: 33.333%; /* 100% / 3 = 33.3% */
-    }
-}
-
-/* Navigation Buttons (Red Circles) */
-.custom-nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: #d00000; /* UNL Red */
-    color: white;
-    border: 2px solid white;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background 0.3s ease;
-}
-
-.custom-nav-btn:hover {
-    background-color: #000; /* Black on hover */
-}
-
-.prev-btn { left: 10px; }
-.next-btn {right:10px;}
-
-.carousel-slide img {
-    object-fit: cover;
-    aspect-ratio: 4/3;
-    width: 100%;
+    height: auto;
 }
 
 .pic-col {
