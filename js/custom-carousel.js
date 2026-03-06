@@ -1,7 +1,7 @@
 //Images list to add images easily
 var carouselImages = [
   {
-    src: "IMG_1699.JPG",
+    src: "IMG_1699.jpg",
     alt: "Driving Car 1"
   },
   {
@@ -9,11 +9,11 @@ var carouselImages = [
     alt: "Driving Car 2"
   },
   {
-    src: "IMG_1745.JPG",
+    src: "IMG_1745.jpg",
     alt: "Driving Car 3"
   },
   {
-    src: "IMG_1770.JPG",
+    src: "IMG_1770.jpg",
     alt: "Driving Car 4"
   }
   ,
