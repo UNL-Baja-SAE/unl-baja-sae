@@ -11,7 +11,7 @@ function updateCountdown(){
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
     // Time calculations for days, hours, minutes and seconds
-    var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(3, "0");;
+    var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, "0");;
     var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, "0");
     var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
     var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, "0");
@@ -43,10 +43,10 @@ function updateCountdown(){
     }
     // Display the result in the element with id="demo"
     if (distance <= 0) {
-        document.getElementById("days-count").innerHTML = 000;
-        document.getElementById("hours-count").innerHTML = 00;
-        document.getElementById("minutes-count").innerHTML = 00;
-        document.getElementById("seconds-count").innerHTML = 00;
+        document.getElementById("days-count").innerHTML = '00';
+        document.getElementById("hours-count").innerHTML = '00';
+        document.getElementById("minutes-count").innerHTML = '00';
+        document.getElementById("seconds-count").innerHTML = '00';
     }
     document.getElementById("days-count").innerHTML = days;
     document.getElementById("hours-count").innerHTML = hours;

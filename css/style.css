@@ -683,9 +683,6 @@ input[type="radio"]:checked+.btn {
         max-width: 100%;
     }
 
-    #desc-img {
-        object-fit: contain;
-    }
 
     .image-wrapper .btn {
         padding: 0.2rem 0.5rem;
@@ -732,10 +729,11 @@ input[type="radio"]:checked+.btn {
     }
 
     .carousel-cell {
-    width: 95% !important; /* half-width */
+        width: 95% !important;
+        /* half-width */
 
- 
-}
+
+    }
 }
 
 @media (max-width:480px) {
@@ -906,14 +904,15 @@ input[type="radio"]:checked+.btn {
 
 
 .carousel-cell {
-  width: 32%; /* half-width */
+    align-self: anchor-center;
+    width: 32%;
 
- 
+
+
 }
 
-.carousel-cell img{
-      object-fit: cover;
-
+.carousel-cell img {
+    object-fit: cover;
     border-radius: 11px;
     object-position: center;
     display: block;
