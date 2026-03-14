@@ -902,11 +902,14 @@ input[type="radio"]:checked+.btn {
     width: fit-content;
 }
 
+.flickity-slider {
+    display: flex !important;
+    align-items: center;
+
+}
 
 .carousel-cell {
-    align-self: anchor-center;
     width: 32%;
-
 
 
 }
