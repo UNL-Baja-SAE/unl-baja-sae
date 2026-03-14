@@ -5,7 +5,7 @@ var carouselImages = [
     alt: "Driving Car 1"
   },
   {
-    src: "IMG_1737.jpg",
+    src: "IMG_1737.jpeg",
     alt: "Driving Car 2"
   },
   {
