@@ -314,3 +314,94 @@
     min-height: 680px;
 }
 
+
+
+.meeting-section {
+    background: var(--scarlet);
+    padding: 4.5rem 0;
+}
+
+.meeting-title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    color: var(--cream);
+    line-height: 1;
+}
+
+.meeting-sub {
+    font-size: 0.88rem;
+    color: rgba(242, 235, 211, 0.65);
+    line-height: 1.8;
+    margin-top: 0.6rem;
+    max-width: 30rem;
+}
+
+.meeting-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 0;
+}
+
+.m-cell {
+    padding: 2rem 2rem 2rem 0;
+    border-right: 1px solid rgba(242, 235, 211, 0.2);
+    margin-right: 2rem;
+}
+
+.m-cell:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.m-cell-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: rgba(242, 235, 211, 0.5);
+    margin-bottom: 0.5rem;
+}
+
+.m-cell-val {
+    font-size: 0.9rem;
+    color: var(--cream);
+    line-height: 1.7;
+}
+
+.m-cell-val strong {
+    font-weight: 700;
+    display: block;
+    font-size: 1rem;
+}
+
+.m-cell-note {
+    font-size: 0.75rem;
+    color: rgba(242, 235, 211, 0.45);
+}
+
+.m-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: rgba(242, 235, 211, 0.5);
+    text-decoration: none;
+    margin-top: 0.4rem;
+    transition: color .2s;
+}
+
+.m-map-link:hover {
+    color: var(--cream);
+}
+
+
+    @media (max-width:991px) {
+      .meeting-grid { grid-template-columns:1fr; }
+      .m-cell { border-right:none; border-bottom:1px solid rgba(242,235,211,0.2); margin-right:0; padding-bottom:1.5rem; margin-bottom:1.5rem; }
+      .m-cell:last-child { border-bottom:none; margin-bottom:0; }
+    }
