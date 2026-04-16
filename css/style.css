@@ -3,18 +3,6 @@
    ========================================================================== */
 :root {
     /* General Colors */
-    --color-primary: oklch(0.55 0.22 27);
-    --color-primary-dark: oklch(0.45 0.20 27);
-    --color-primary-darker: oklch(0.42 0.21 27);
-    --color-secondary: oklch(1 0 0);
-    --color-background: oklch(0.95 0.04 85);
-    --color-dark: oklch(0.22 0 0);
-    --color-grey: oklch(0.70 0 0);
-    --color-black: oklch(0 0 0);
-    --color-gold: oklch(0.84 0.18 95);
-    --color-silver: oklch(0.78 0.02 250);
-    --color-bronze: oklch(0.62 0.14 65);
-    --color-light-grey: oklch(0.97 0.01 250);
 
     /* UNL Brand Tokens */
     --scarlet: oklch(0.54 0.23 27);
@@ -134,19 +122,6 @@ img {
     color: var(--scarlet);
 }
 
-.btn-outline-husker {
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    background-color: transparent;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-husker:hover,
-.btn-outline-husker:focus {
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-}
 
 /* ==========================================================================
    3. Utilities & Backgrounds
@@ -287,7 +262,7 @@ img {
     color: var(--cream) !important;
     background: rgba(204, 0, 0, 0.15);
     text-decoration: underline;
-    text-decoration-color: var(--color-primary-dark);
+    text-decoration-color: var(--scarlet-dk);
     text-underline-offset: 5px;
 }
 
@@ -356,18 +331,13 @@ img {
 
 }
 
-@media (max-width: 480px) {
-    .navbar-brand {
-        font-size: 2rem;
-    }
-}
+
 
 /* ==========================================================================
    7. Page Headers & Hero
    ========================================================================== */
 
 
-/* Solid Hero (No Image) */
 .page-header {
     position: relative;
     overflow: hidden;
@@ -377,7 +347,6 @@ img {
     flex-direction: column;
     justify-content: flex-end;
     padding-top: 58px;
-    /* Offset for fixed nav */
 }
 
 .page-header::after {
@@ -467,12 +436,12 @@ img {
 
 .inner-container {
     position: relative;
-    display: inline-block; /* Wraps tightly around the image */
+    display: inline-block;
 }
 
 .inner-container img {
     display: block;
-    max-height: 400px; /* Limits the image height */
+    max-height: 400px; 
     width: auto;
     object-fit: contain;
 }
@@ -524,66 +493,9 @@ img {
 /* ==========================================================================
    10. Components: Accordions, Team Cards, Gallery & Forms
    ========================================================================== */
-/* Accordions */
-
-/* Team Strip & Leader Cards */
-.team-strip {
-    background: var(--cream);
-    padding: 4.5rem 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.07);
-}
-
-.leader-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-}
-
-.leader-card img {
-    width: 100%;
-    aspect-ratio: 3/4;
-    object-fit: cover;
-    display: block;
-    filter: grayscale(15%);
-    transition: filter .3s, transform .4s;
-}
-
-.leader-card:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.04);
-}
-
-.lc-info {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, transparent 100%);
-    padding: 1rem 0.9rem 0.85rem;
-}
-
-.lc-name {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: var(--scarlet-dk);
-    font-weight: 700;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-.lc-role {
-    font-family: 'Barlow Condensed', sans-serif;
-    color: #fff;
-    font-size: 0.8rem;
-    margin-top: 0.2rem;
-}
-
-/* Gallery */
 
 
-/* Forms & Icons */
+
 .form-control.is-valid,
 .was-validated .form-control:valid,
 .was-validated .form-select:valid {
@@ -601,15 +513,11 @@ img {
 }
 
 .icon.collapsed {
-    color: var(--color-secondary);
+    color: var(--cream);
     font-size: 1.5rem;
 }
 
-.icon.colapsed {
-    /* Typo matching original code */
-    color: var(--color-primary-dark);
-    font-size: 1.5rem;
-}
+
 
 /* ==========================================================================
    11. Join, Countdown & Misc Elements
@@ -648,33 +556,26 @@ img {
     object-position: center;
 }
 
-.map-iframe {
-    max-width: 400px;
-    max-height: 300px;
-    width: calc(100vw - 15vw);
-    aspect-ratio: 4/3;
-    height: auto;
-}
 
 /* ==========================================================================
    12. Footer
    ========================================================================== */
 .site-footer {
-    background-color: var(--color-dark);
-    color: var(--color-grey);
+    background-color: var(--ink);
+    color: var(--mid);
     text-align: center;
     padding: 1rem;
 }
 
 .site-footer a.footer-icon {
-    color: var(--color-grey);
+    color: var(--mid);
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .site-footer a.footer-icon:hover {
-    color: var(--color-primary);
+    color: var(--scarlet);
 }
 
 /* ==========================================================================
@@ -737,24 +638,6 @@ img {
     }
 }
 
-@keyframes floatIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-50%) translateX(-100%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(-50%) translateX(0);
-        opacity: 1;
-    }
-}
 
 @media (prefers-reduced-motion: no-preference) {
     .accordion-collapse {
@@ -786,7 +669,6 @@ img {
 .value-num {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 2.5rem;
-    /* Standardized duplicate block sizes */
     font-weight: 900;
     color: rgba(204, 0, 0, 0.15);
     line-height: 1;

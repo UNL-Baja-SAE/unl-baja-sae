@@ -1,0 +1,53 @@
+
+.team-strip {
+    background: var(--cream);
+    padding: 4.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.leader-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.leader-card img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(15%);
+    transition: filter .3s, transform .4s;
+}
+
+.leader-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+.lc-info {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, transparent 100%);
+    padding: 1rem 0.9rem 0.85rem;
+}
+
+.lc-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--scarlet-dk);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.lc-role {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}

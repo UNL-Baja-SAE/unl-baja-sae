@@ -31,22 +31,14 @@
   <link rel="apple-touch-icon" href="https://husker-baja.org/favicon/apple-touch-icon.png">
   <link rel="manifest" href="https://husker-baja.org/favicon/site.webmanifest">
 
-  <link rel="preload" as="image" href="images/IMG_1737.jpeg">
-  <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap"
-      rel="stylesheet">
-  </noscript>
+  <link rel="preload" as="image" href="images/IMG_1737.webp">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link href="
 https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
 " rel="stylesheet">
@@ -85,7 +77,12 @@ https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
 
   <main style="width:100%; overflow:hidden;">
     <section class="hero">
-      <img class="hero-img" src="images/IMG_1737.jpeg" alt="Husker Racing Baja SAE">
+      <picture>
+        <source srcset="images/hero-mobile.webp" media="(max-width: 767px)">
+
+        <img class="hero-img" src="images/IMG_1737.webp" alt="Husker Racing Baja SAE">
+      </picture>
+
       <div class="hero-gradient"></div>
       <div class="container hero-content">
         <div class="eyebrow mb-3" style="color:var(--scarlet); "><span>UNL Baja SAE — Est. 1996</span></div>
@@ -176,40 +173,35 @@ https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
         <div class="row g-2">
           <div class="col-12 col-md-6">
             <a href="../images/carousel/image01.webp" class="g-item d-block h-100 rounded-1">
-              <img src="../images/carousel/image01.webp" alt="Racing action"
-                class="w-100 h-100 object-fit-cover" style="min-height: 350px;">
+              <img src="../images/carousel/image01.webp" alt="Racing action" class="w-100 h-100 object-fit-cover"
+                style="min-height: 350px;">
             </a>
           </div>
 
           <div class="col-12 col-md-6">
             <div class="row g-2 h-100">
               <div class="col-6">
-                <a href="images/carousel/image04.webp"
-                  class="g-item d-block h-100 rounded-1">
-                  <img src="images/carousel/image04.webp" alt="Car detail"
-                    class="w-100 h-100 object-fit-cover" style="min-height: 170px;">
+                <a href="images/carousel/image04.webp" class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image04.webp" alt="Car detail" class="w-100 h-100 object-fit-cover"
+                    style="min-height: 170px;">
                 </a>
               </div>
               <div class="col-6">
-                <a href="images/IMG_1745.jpg"
-                  class="g-item d-block h-100 rounded-1">
-                  <img src="images/IMG_1745.jpg"
-                    alt="Car build" class="w-100 h-100 object-fit-cover"
+                <a href="images/IMG_1745.jpg" class="g-item d-block h-100 rounded-1">
+                  <img src="images/IMG_1745.jpg" alt="Car build" class="w-100 h-100 object-fit-cover"
                     style="object-position:top; min-height: 170px;">
                 </a>
               </div>
               <div class="col-6">
-                <a href="images/carousel/image06.webp"
-                  class="g-item d-block h-100 rounded-1">
-                  <img src="images/carousel/image06.webp"
-                    alt="Competition" class="w-100 h-100 object-fit-cover" style="min-height: 170px;">
+                <a href="images/carousel/image06.webp" class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image06.webp" alt="Competition" class="w-100 h-100 object-fit-cover"
+                    style="min-height: 170px;">
                 </a>
               </div>
               <div class="col-6">
-                <a href="images/carousel/image05.webp"
-                  class="g-item d-block h-100 rounded-1">
-                  <img src="images/carousel/image05.webp" alt="Team"
-                    class="w-100 h-100 object-fit-cover" style="object-position:bottom; min-height: 170px;">
+                <a href="images/carousel/image05.webp" class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image05.webp" alt="Team" class="w-100 h-100 object-fit-cover"
+                    style="object-position:bottom; min-height: 170px;">
                 </a>
               </div>
             </div>
@@ -228,7 +220,7 @@ https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
       <div class="sub-layout row row-cols-1 row-cols-md-2">
         <div class="sub-diagram d-flex justify-content-center col col-md-9">
           <div class="diagram-inner">
-            <img class="sub-car-img" src="../images/car_diagram.png" alt="Baja car with subsystem labels">
+            <img class="sub-car-img" src="../images/car_diagram.webp" alt="Baja car with subsystem labels">
             <div class="sub-marker m-chassis active" onclick="selectSub('chassis')">
               <div class="marker-dot"></div>
               <div class="marker-pill">Chassis</div>
@@ -265,7 +257,7 @@ https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
               to be lightweight, strong, and fully compliant with SAE safety standards.</div>
             <a href="../subsystems#collapseChassis" id="sub-link" class="sub-link">Learn More →</a>
           </div>
-          <div class="sub-tabs row row-cols-3">
+          <div class="sub-tabs row row-cols-3 mx-0">
 
             <button class="sub-tab col-4 py-3 active" onclick="selectSub('chassis')">Chassis</button>
             <button class="sub-tab col-4 py-3" onclick="selectSub('suspension')">Suspension</button>
@@ -324,10 +316,7 @@ https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script>AOS.init({ once: true });</script>
   <script
     src="https://cdn.jsdelivr.net/combine/npm/lightgallery@2.9.0,npm/lightgallery@2.9.0/plugins/zoom/lg-zoom.min.js,npm/lightgallery@2.9.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
   <script src="js/index.js" defer></script>

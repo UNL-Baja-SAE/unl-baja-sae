@@ -380,24 +380,7 @@
     color: rgba(242, 235, 211, 0.45);
 }
 
-.m-map-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: rgba(242, 235, 211, 0.5);
-    text-decoration: none;
-    margin-top: 0.4rem;
-    transition: color .2s;
-}
 
-.m-map-link:hover {
-    color: var(--cream);
-}
 
 
     @media (max-width:991px) {

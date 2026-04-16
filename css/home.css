@@ -138,12 +138,35 @@
     border-color: var(--scarlet);
 }
 
-.m-chassis     { top: 12%; left: 22%; }
-.m-suspension  { bottom: 43%; right: 41%; }
-.m-powertrain  { bottom: 59%; left: 22%; }
-.m-controls    { top: 32%; right: 50%; }
-.m-body        { top: 51%; left: 45%; }
-.m-electronics { top: 5.5%; right: 38%; }
+.m-chassis {
+    top: 12%;
+    left: 22%;
+}
+
+.m-suspension {
+    bottom: 43%;
+    right: 41%;
+}
+
+.m-powertrain {
+    bottom: 59%;
+    left: 22%;
+}
+
+.m-controls {
+    top: 32%;
+    right: 50%;
+}
+
+.m-body {
+    top: 51%;
+    left: 45%;
+}
+
+.m-electronics {
+    top: 5.5%;
+    right: 38%;
+}
 
 .m-chassis .marker-pill,
 .m-body .marker-pill {
@@ -286,11 +309,15 @@
 
 .hero-img {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: right top;
+    object-position: top;
+    z-index: -1;
     filter: brightness(0.7);
+
 }
 
 .hero-gradient {
@@ -395,6 +422,7 @@
     #mainNavbar {
         padding-right: 1rem;
     }
+
     .page-header-content {
         margin-left: 1rem;
     }
