@@ -39,207 +39,267 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap"
       rel="stylesheet">
   </noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link href="
+https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css
+" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/gallery.css">
+
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
-      <div class="container d-flex align-items-center navbar-container">
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about/">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="join/">Join</a></li>
-            <li class="nav-item"><a class="nav-link" href="team/">Our Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="subsystems/">Subsystems</a></li>
-            <li class="nav-item"><a class="nav-link" href="sponsors/">Sponsors</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact/">Contact Us</a></li>
-
-          </ul>
-        </div>
-      </div>
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg fixed-top px-3 px-lg-4" id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">
+        UNL Husker Racing
+      </a>
+      <button class="navbar-toggler border-0 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
       </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav py-3 py-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about/">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="team/">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="subsystems/">Subsystems</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsors/">Sponsors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact/">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../gallery/">Gallery</a></li>
 
-    </nav>
-  </header>
+
+        </ul>
+        <a href="join/" class="btn btn-scarlet ms-lg-3 mb-3 mb-lg-0">Join the Team</a>
+      </div>
+    </div>
+  </nav>
 
 
-  <main>
+  <main style="width:100%; overflow:hidden;">
     <section class="hero">
-      <div class="hero-wrapper">
-        <img src="images/IMG_1737.jpeg" fetchpriority="high" alt="Husker Racing Baja SAE" class="hero-image">
-      </div>
-
-
-
-      <div class="hero-text-container">
-        <div class="hero-text">
-          <span>Husker Racing</span><br>
-          <span>Baja SAE</span>
+      <img class="hero-img" src="images/IMG_1737.jpeg" alt="Husker Racing Baja SAE">
+      <div class="hero-gradient"></div>
+      <div class="container hero-content">
+        <div class="eyebrow mb-3" style="color:var(--scarlet); "><span>UNL Baja SAE — Est. 1996</span></div>
+        <h1 class="display-condensed hero-title mb-4">Built<br>to <em>Race.</em></h1>
+        <p class="hero-sub mb-4">An award-winning engineering team at the University of Nebraska–Lincoln. We design,
+          build, and race an off-road vehicle on the national stage — open to all majors.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="subsystems/" class="btn btn-scarlet">Explore Subsystems</a>
+          <a href="join/" class="btn btn-outline-cream">Join the Team</a>
         </div>
       </div>
-
-    </section>
-    <section class="container content-container countdown-container mt-sm-0 mt-lg-4 p-4 text-center"
-      data-aos="flip-down">
-      <h1>Countdown to Competition</h1>
-      <hr class="heading-line">
-      <div class="row">
-        <div class="col-3 align-items-center counter">
-          <div id="days-count" class="countdown">
-            191
-          </div>
-          <div class="countdown-desc">
-            Days
-          </div>
-        </div>
-        <div class="col-1 align-items-center">
-          <div class="countdown semi-colon">
-            :
-          </div>
-
-        </div>
-        <div class="col-2 align-items-center counter">
-          <div id="hours-count" class="countdown">
-            21
-          </div>
-          <div class="countdown-desc">
-            Hours
-          </div>
-        </div>
-        <div class="col-1 align-items-center">
-          <div class="countdown semi-colon">
-            :
-          </div>
-
-        </div>
-        <div class="col-2 align-items-center counter">
-          <div id="minutes-count" class="countdown">
-            21
-          </div>
-          <div class="countdown-desc">
-            Minutes
-          </div>
-        </div>
-        <div class="col-1 align-items-center">
-          <div class="countdown semi-colon">
-            :
-          </div>
-
-        </div>
-        <div class="col-2 align-items-center counter">
-          <div id="seconds-count" class="countdown">
-            21
-          </div>
-          <div class="countdown-desc">
-            Seconds
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section class="container content-container mt-4 p-4" data-aos="fade-right">
-      <h2 style="color:#ae1100">About Husker Racing</h2>
-
-      <p>Husker Racing at UNL is a 20+ year award-winning team offering students hands-on engineering experience,
-        professional skill development, and opportunities to compete nationally. Open to all majors and backgrounds.</p>
-      <a class="btn btn-outline-husker ms-auto" href="about/">Learn More</a>
-    </section>
-
-
-    <section class="container-2  mt-4 pb-5">
-      <h2>Pictures</h2>
-
-        <div id="main-carousel" class="main-carousel">
-          
-        </div>
-
-
+      <div class="hero-scroll d-none d-md-flex">
+        <div class="scroll-line"></div>
+        <div class="scroll-text">Scroll</div>
       </div>
     </section>
 
-    <section class="container content-container mt-4 p-4" data-aos="flip-right" data-aos-duration="500">
-      <h1>Subsystems</h1>
-      <hr class="heading-line">
-      <!--Baja Car diagram-->
-      <div class="image-wrapper">
-        <img class="diagram-img" src="images/PXL_20250925_191559867.jpg" alt="Image of the Car">
-        <fieldset>
-          <legend class="visually-hidden">Select a car subsystem</legend>
-          <input type="radio" id="radio-body" name="car-part" value=0 hidden>
-          <label for="radio-body" id="btn-body" class="btn">Body & Ergonomics</label>
-
-          <input type="radio" id="radio-electronics" name="car-part" value=1 hidden>
-          <label for="radio-electronics" id="btn-electronics" class="btn">Electronics</label>
-
-          <input type="radio" id="radio-susp" name="car-part" value=2 hidden>
-          <label for="radio-susp" id="btn-susp" class="btn">Suspension</label>
-
-          <input type="radio" id="radio-powertrain" name="car-part" value=3 hidden>
-          <label for="radio-powertrain" id="btn-powertrain" class="btn">Powertrain</label>
-
-          <input type="radio" id="radio-controls" name="car-part" value=4 hidden>
-          <label for="radio-controls" id="btn-controls" class="btn">Controls</label>
-
-          <input type="radio" id="radio-chassis" name="car-part" value=5 hidden>
-          <label for="radio-chassis" id="btn-chassis" class="btn">Chassis</label>
-        </fieldset>
-
-        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-          <line x1="50%" y1="50%" x2="35%" y2="80%" stroke="black" stroke-width="2"></line>
-          <line x1="20%" y1="80%" x2="35.15%" y2="80%" stroke="black" stroke-width="2"></line>
-
-          <line x1="60%" y1="6%" x2="65%" y2="13%" stroke="black" stroke-width="2"></line>
-          <line x1="65%" y1="13%" x2="90%" y2="13%" stroke="black" stroke-width="2"></line>
-
-          <line x1="59%" y1="55%" x2="70%" y2="85%" stroke="black" stroke-width="2"></line>
-          <line x1="70%" y1="85%" x2="90%" y2="85%" stroke="black" stroke-width="2"></line>
-
-          <line x1="32%" y1="40%" x2="24%" y2="70%" stroke="black" stroke-width="2"></line>
-          <line x1="24%" y1="70%" x2="10%" y2="70%" stroke="black" stroke-width="2"></line>
-
-          <line x1="40%" y1="4%" x2="30%" y2="19%" stroke="black" stroke-width="2"></line>
-          <line x1="30.1%" y1="19%" x2="10%" y2="19%" stroke="black" stroke-width="2"></line>
-
-          <line x1="52%" y1="31%" x2="70%" y2="25%" stroke="black" stroke-width="2"></line>
-          <line x1="70%" y1="25%" x2="90%" y2="25%" stroke="black" stroke-width="2"></line>
-        </svg>
-      </div>
-
-      <!-- Right: Description -->
-      <div class="card h-100" id="desc-card" aria-live="polite">
-        <img src="images/480689290_1175452174585236_8100909974217842168_n.jpg" class="card-img-top" id="desc-img"
-          alt="Image related to subsystem">
-        <div class="card-body">
-          <h5 class="card-title" id="desc-title">Subsytem</h5>
-          <p class="card-text" id="desc-text">The design and production of our car is split up into 6 diffrent
-            Subsystems: Chassis, Suspension, Powertrain,
-            Controls, Body and Ergonomics, and Electronics. <b>Select a subsystem to learn more about it!</b></p>
-          <a href="subsystems/" onclick="goToAbout()" id="desc-link" class="btn btn-outline-husker"
-            aria-label="Learn more about subsystems">Learn more</a>
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrap">
+      <div class="d-flex">
+        <div class="countdown-tag d-none d-sm-flex">Countdown to Competition</div>
+        <div class="flex-grow-1 d-grid" style="grid-template-columns:repeat(4,1fr);">
+          <div class="count-unit">
+            <div class="count-num" id="cd-days">—</div>
+            <div class="count-lbl">Days</div>
+          </div>
+          <div class="count-unit">
+            <div class="count-num" id="cd-hours">—</div>
+            <div class="count-lbl">Hours</div>
+          </div>
+          <div class="count-unit">
+            <div class="count-num" id="cd-mins">—</div>
+            <div class="count-lbl">Minutes</div>
+          </div>
+          <div class="count-unit">
+            <div class="count-num" id="cd-secs">—</div>
+            <div class="count-lbl">Seconds</div>
+          </div>
         </div>
       </div>
+    </div>
+
+    <section>
+      <div class="container mt-4">
+        <div class="row align-items-center">
 
 
+          <div class="col-lg-6 order-lg-2 d-flex justify-content-center  mb-5 mb-lg-0 ">
+            <div class="section-img-wrap">
+              <div class="inner-container">
+                <img class="img-fluid" src="../images/480689290_1175452174585236_8100909974217842168_n.jpg"
+                  alt="Husker Racing car">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="section-content pt-sm-0">
+              <div class="eyebrow mb-3">Who We Are</div>
+              <h2 class="display-condensed section-title mb-0">About<br>Husker<br>Racing</h2>
+              <div class="rule-red my-4"></div>
+              <p class="section-body mb-3">Husker Racing at UNL is a 20+ year award-winning team offering students
+                hands-on
+                engineering experience, professional skill development, and opportunities to compete nationally.</p>
+              <p class="section-body mb-4">One of the most decorated Baja SAE teams in the Midwest — and open to
+                students
+                of
+                all majors and backgrounds.</p>
+              <a href="about/" class="btn btn-scarlet">Our Full Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
 
+
+    <!-- GALLERY -->
+    <section id="image-gallery" class="cream-dk-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <div class="eyebrow mb-2">Gallery</div>
+            <h2 class="display-condensed" style="font-size:2.5rem;color:var(--ink);">Photos</h2>
+          </div>
+          <a href="gallery/" class="gallery-link">View All →</a>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-12 col-md-6">
+            <a href="../images/carousel/image01.webp" class="g-item d-block h-100 rounded-1">
+              <img src="../images/carousel/image01.webp" alt="Racing action"
+                class="w-100 h-100 object-fit-cover" style="min-height: 350px;">
+            </a>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="row g-2 h-100">
+              <div class="col-6">
+                <a href="images/carousel/image04.webp"
+                  class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image04.webp" alt="Car detail"
+                    class="w-100 h-100 object-fit-cover" style="min-height: 170px;">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="images/IMG_1745.jpg"
+                  class="g-item d-block h-100 rounded-1">
+                  <img src="images/IMG_1745.jpg"
+                    alt="Car build" class="w-100 h-100 object-fit-cover"
+                    style="object-position:top; min-height: 170px;">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="images/carousel/image06.webp"
+                  class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image06.webp"
+                    alt="Competition" class="w-100 h-100 object-fit-cover" style="min-height: 170px;">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="images/carousel/image05.webp"
+                  class="g-item d-block h-100 rounded-1">
+                  <img src="images/carousel/image05.webp" alt="Team"
+                    class="w-100 h-100 object-fit-cover" style="object-position:bottom; min-height: 170px;">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sub-section">
+      <div class="sub-header">
+        <div class="eyebrow mb-2">Engineering</div>
+        <h2 class="display-condensed" style="font-size:clamp(2rem,5vw,3rem);color:var(--ink);">Subsystems</h2>
+        <p style="font-size:0.85rem;color:var(--mid);margin-top:0.75rem;max-width:30rem;line-height:1.8;">Our car is
+          split into 6 engineering subsystems. Click a label on the car to learn more about it.</p>
+      </div>
+      <div class="sub-layout row row-cols-1 row-cols-md-2">
+        <div class="sub-diagram d-flex justify-content-center col col-md-9">
+          <div class="diagram-inner">
+            <img class="sub-car-img" src="../images/car_diagram.png" alt="Baja car with subsystem labels">
+            <div class="sub-marker m-chassis active" onclick="selectSub('chassis')">
+              <div class="marker-dot"></div>
+              <div class="marker-pill">Chassis</div>
+            </div>
+            <div class="sub-marker m-suspension" onclick="selectSub('suspension')">
+              <div class="marker-pill">Suspension</div>
+              <div class="marker-dot"></div>
+            </div>
+            <div class="sub-marker m-powertrain" onclick="selectSub('powertrain')">
+              <div class="marker-dot"></div>
+              <div class="marker-pill">Powertrain</div>
+            </div>
+            <div class="sub-marker m-controls" onclick="selectSub('controls')">
+              <div class="marker-pill">Controls</div>
+              <div class="marker-dot"></div>
+            </div>
+            <div class="sub-marker m-body" onclick="selectSub('body')">
+              <div class="marker-dot"></div>
+              <div class="marker-pill">Body &amp; Ergonomics</div>
+            </div>
+            <div class="sub-marker m-electronics" onclick="selectSub('electronics')">
+              <div class="marker-pill">Electronics</div>
+              <div class="marker-dot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-panel col col-md-3">
+          <div class="sub-panel-img"><img src="images/IMG_1994.jpg" alt="Subsystem detail" id="panel-img"></div>
+          <div class="sub-panel-body">
+            <div class="sub-num" id="panel-num">Subsystem 01</div>
+            <div class="sub-title" id="panel-title">Chassis</div>
+            <div class="sub-rule"></div>
+            <div class="sub-desc" id="panel-desc">The Chassis team builds the overall frame of the car. It's engineered
+              to be lightweight, strong, and fully compliant with SAE safety standards.</div>
+            <a href="../subsystems#collapseChassis" id="sub-link" class="sub-link">Learn More →</a>
+          </div>
+          <div class="sub-tabs row row-cols-3">
+
+            <button class="sub-tab col-4 py-3 active" onclick="selectSub('chassis')">Chassis</button>
+            <button class="sub-tab col-4 py-3" onclick="selectSub('suspension')">Suspension</button>
+            <button class="sub-tab col-4 py-3" onclick="selectSub('powertrain')">Powertrain</button>
+
+            <button class="sub-tab col-4 py-3" onclick="selectSub('body')">Body & Ergo</button>
+            <button class="sub-tab col-4 py-3" onclick="selectSub('controls')">Controls</button>
+            <button class="sub-tab col-4 py-3" onclick="selectSub('electronics')">Electronics</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- JOIN -->
+    <section class="join-section">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <h2 class="display-condensed join-title">Ready to Build<br>Something Real?</h2>
+            <p class="join-sub">No experience required — engineers, designers, project managers, and anyone passionate
+              about building things is welcome on this team.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="join/" class="btn btn-cream">Join us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   </main>
-
-  <footer class="site-footer mt-5 py-4">
+  <footer class="site-footer">
     <div class="container text-center">
-      <div class="mb-2">
+      <div class="mb-3">
         <a href="https://www.facebook.com/huskerracing" target="_blank" class="footer-icon me-3" alt="Facebook"
           aria-label="Facebook">
           <i class="bi bi-facebook"></i>
@@ -252,7 +312,12 @@
           <i class="bi bi-envelope-fill"></i>
         </a>
       </div>
-      <p class="mb-0">© 2026 Husker Racing Baja SAE. All rights reserved.</p>
+      <p class="mb-2" style="font-size: 0.85rem; color: var(--mid); max-width: 600px; margin: 0 auto;">
+        Husker Racing is a Recognized Student Organization at the University of Nebraska Lincoln and is not an official
+        university department.
+      </p>
+      <p class="mb-0" style="font-size: 0.85rem; color: var(--mid);">© 2026 Husker Racing Baja SAE. All rights reserved.
+      </p>
     </div>
   </footer>
 
@@ -261,13 +326,16 @@
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>AOS.init({ once: true });</script>
+  <script
+    src="https://cdn.jsdelivr.net/combine/npm/lightgallery@2.9.0,npm/lightgallery@2.9.0/plugins/zoom/lg-zoom.min.js,npm/lightgallery@2.9.0/plugins/thumbnail/lg-thumbnail.min.js"></script>
   <script src="js/index.js" defer></script>
-  <script src="js/custom-carousel.js" defer></script>
   <script src="js/diagram.js" defer></script>
   <script src="js/countdown.js" defer></script>
 
   <script type="application/ld+json">
+
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -276,6 +344,7 @@
   "logo": "https://husker-baja.org/images/logo.png"
 }
 </script>
+
 
 
 </body>

@@ -5,7 +5,6 @@ phoneInput.addEventListener('keydown', function (e) {
 
 })
 phoneInput.addEventListener('input', function () {
-    console.log("test");
     this.value = formatToPhone(this.value);
 })
 function formatToPhone(val) {
@@ -50,8 +49,9 @@ form.addEventListener("submit", function (e) {
     if (document.getElementById("country").value != "") {
         return
     }
-
+    console.log(data);
     // AJAX submit
+    
     fetch("https://formspree.io/f/xzzyzopg", {
         method: "POST",
         body: data,

@@ -17,45 +17,46 @@ function updateCountdown(){
     var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, "0");
 
 
-    if (document.getElementById("days-count").innerHTML != days) {
-        document.getElementById("days-count").classList.add('beat-animation');
+    if (document.getElementById("cd-days").innerHTML != days) {
+        document.getElementById("cd-days").classList.add('beat-animation');
         setTimeout(() => {
-            document.getElementById("days-count").classList.remove('beat-animation');
+            document.getElementById("cd-days").classList.remove('beat-animation');
         }, 500);
     }
-    if (document.getElementById("hours-count").innerHTML != hours) {
-        document.getElementById("hours-count").classList.add('beat-animation');
+    if (document.getElementById("cd-hours").innerHTML != hours) {
+        document.getElementById("cd-hours").classList.add('beat-animation');
         setTimeout(() => {
-            document.getElementById("hours-count").classList.remove('beat-animation');
+            document.getElementById("cd-hours").classList.remove('beat-animation');
         }, 500);
     }
-    if (document.getElementById("minutes-count").innerHTML != minutes) {
-        document.getElementById("minutes-count").classList.add('beat-animation');
+    if (document.getElementById("cd-mins").innerHTML != minutes) {
+        document.getElementById("cd-mins").classList.add('beat-animation');
         setTimeout(() => {
-            document.getElementById("minutes-count").classList.remove('beat-animation');
+            document.getElementById("cd-mins").classList.remove('beat-animation');
         }, 500);
     }
-    if (document.getElementById("seconds-count").innerHTML != seconds) {
-        document.getElementById("seconds-count").classList.add('beat-animation');
+    if (document.getElementById("cd-secs").innerHTML != seconds) {
+        document.getElementById("cd-secs").classList.add('beat-animation');
         setTimeout(() => {
-            document.getElementById("seconds-count").classList.remove('beat-animation');
+            document.getElementById("cd-secs").classList.remove('beat-animation');
         }, 500);
     }
     // Display the result in the element with id="demo"
     if (distance <= 0) {
-        document.getElementById("days-count").innerHTML = '00';
-        document.getElementById("hours-count").innerHTML = '00';
-        document.getElementById("minutes-count").innerHTML = '00';
-        document.getElementById("seconds-count").innerHTML = '00';
+        document.getElementById("cd-days").innerHTML = '00';
+        document.getElementById("cd-hours").innerHTML = '00';
+        document.getElementById("cd-mins").innerHTML = '00';
+        document.getElementById("cd-secs").innerHTML = '00';
     }
-    document.getElementById("days-count").innerHTML = days;
-    document.getElementById("hours-count").innerHTML = hours;
-    document.getElementById("minutes-count").innerHTML = minutes;
-    document.getElementById("seconds-count").innerHTML = seconds;
+
+    document.getElementById("cd-days").innerHTML = days;
+    document.getElementById("cd-hours").innerHTML = hours;
+    document.getElementById("cd-mins").innerHTML = minutes;
+    document.getElementById("cd-secs").innerHTML = seconds;
 
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
+
     }
 }

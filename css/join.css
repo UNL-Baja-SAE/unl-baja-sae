@@ -1,0 +1,316 @@
+.faq-section {
+    background: var(--ink2);
+    padding: 5rem 0;
+}
+
+.faq-section .faq-title {
+    color: var(--cream);
+    font-size: 2.7rem;
+}
+
+.faq-section .accordion-item {
+    background: var(--ink2);
+}
+
+.faq-section .accordion-button {
+    background: var(--ink2);
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    color: var(--cream-lg);
+    font-weight: 700;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+    /* Optional: keep subtle border */
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border-color: var(--mid)
+}
+
+.accordion-button::after {
+    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(308deg) brightness(200%) contrast(86%);
+}
+
+.faq-section .accordion-body {
+    color: var(--mid2)
+}
+
+
+/* ── What to expect ── */
+.expect-section {
+    background: var(--cream);
+    padding: 5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.time-commit-box {
+    background: var(--ink2);
+    padding: 1.5rem 1.75rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+}
+
+.time-commit-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--scarlet);
+    margin-bottom: 0.75rem;
+}
+
+.time-commit-text {
+    font-size: 0.85rem;
+    color: rgba(242, 235, 211, 0.6);
+    line-height: 1.8;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 0.35rem;
+    top: 0.5rem;
+    bottom: 0;
+    width: 2px;
+    background: rgba(204, 0, 0, 0.15);
+}
+
+.timeline-item {
+    position: relative;
+    background: white;
+    padding: 1.75rem;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    margin-bottom: 2rem;
+    border-left: 3px solid transparent;
+    transition: border-color .3s;
+}
+
+.timeline-item:hover {
+    border-color: var(--scarlet);
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.tl-node {
+    position: absolute;
+    left: -2.79rem;
+    top: 2rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    background: var(--scarlet);
+    border: 3px solid var(--cream);
+    border-radius: 50%;
+}
+
+.tl-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgba(204, 0, 0, 0.05);
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.tl-tag {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    background: rgba(204, 0, 0, 0.06);
+    color: var(--scarlet);
+    padding: 0.25rem 0.6rem;
+    border-radius: 2px;
+    margin-bottom: 0.85rem;
+}
+
+.tl-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+}
+
+.tl-desc {
+    font-size: 0.88rem;
+    color: var(--mid);
+    line-height: 1.8;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ── Skills Section ── */
+.skills-section {
+    background: var(--ink);
+    padding: 5rem 0;
+}
+
+.skill-card {
+    border-top: 2px solid rgba(242, 235, 211, 0.07);
+    padding: 1.75rem 1.5rem;
+    height: 100%;
+    transition: border-color .25s;
+    position: relative;
+}
+
+.skill-card:hover {
+    border-color: var(--scarlet);
+}
+
+.sk-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgba(204, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.sk-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+}
+
+.sk-desc {
+    font-size: 0.8rem;
+    color: rgba(242, 235, 211, 0.45);
+    line-height: 1.8;
+}
+
+
+/* ── Form section ── */
+.form-section {
+    background: var(--cream-dk);
+    padding: 5rem 0;
+}
+
+.form-card {
+    background: white;
+    border-top: 3px solid var(--scarlet);
+    padding: 2.5rem;
+    border-radius: 2px;
+}
+
+.form-steps-wrap {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.form-steps-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--scarlet);
+    margin-bottom: 1rem;
+}
+
+.form-steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-step-item {
+    display: grid;
+    grid-template-columns: 1.75rem 1fr;
+    gap: 0.75rem;
+    align-items: start;
+}
+
+.form-step-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: var(--scarlet);
+    line-height: 1;
+    padding-top: 0.1rem;
+}
+
+.form-step-desc {
+    font-size: 0.82rem;
+    color: var(--mid);
+    line-height: 1.7;
+}
+
+.form-step-strong {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    color: var(--ink);
+}
+
+.form-contact-box {
+    background: rgba(204, 0, 0, 0.06);
+    border-left: 3px solid var(--scarlet);
+    padding: 1rem 1.25rem;
+    margin-top: 2rem;
+    border-radius: 0 2px 2px 0;
+}
+
+.form-contact-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--scarlet);
+    margin-bottom: 0.35rem;
+}
+
+.form-contact-text {
+    font-size: 0.8rem;
+    color: var(--mid);
+    line-height: 1.7;
+}
+
+.gform-wrap {
+    position: relative;
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    background: white;
+}
+
+.gform-wrap iframe {
+    width: 100%;
+    border: none;
+    display: block;
+    min-height: 680px;
+}
+

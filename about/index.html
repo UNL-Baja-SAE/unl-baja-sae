@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - UNL Baja SAE</title>
 
-  <meta name="description" content="About UNL Baja SAE: a student-led engineering team dedicated to designing, building, and competing in off-road vehicle challenges.">
+  <meta name="description"
+    content="About UNL Baja SAE: a student-led engineering team dedicated to designing, building, and competing in off-road vehicle challenges.">
   <meta property="og:title" content="About - UNL Baja SAE">
   <meta property="og:image" content="https://husker-baja.org/images/logo.png">
   <meta property="og:url" content="https://husker-baja.org/about/">
@@ -20,113 +21,224 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/about.css">
+
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container navbar-container">
-      <a class="navbar-brand" href="../">UNL Baja SAE</a>
-
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg fixed-top px-3 px-lg-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">
+        UNL Husker Racing
+      </a>
+      <button class="navbar-toggler border-0 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
       </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav py-3 py-lg-0 align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="../join/">Join</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../about/">About</a></li>
           <li class="nav-item"><a class="nav-link" href="../team/">Our Team</a></li>
           <li class="nav-item"><a class="nav-link" href="../subsystems/">Subsystems</a></li>
-          <li class="nav-item"><a class="nav-link " href="../sponsors/">Sponsors</a></li>
+          <li class="nav-item"><a class="nav-link" href="../sponsors/">Sponsors</a></li>
           <li class="nav-item"><a class="nav-link" href="../contact/">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="../gallery/">Gallery</a></li>
+
         </ul>
+        <a href="../join/" class="btn btn-scarlet ms-lg-3 mb-3 mb-lg-0">Join the Team</a>
       </div>
     </div>
   </nav>
 
   <main class="pt-3 mt-5">
-    <div class="section-heading text-center my-5">
-      <h1 class="fw-bold text-uppercase text-danger display-4">
-        About
-      </h1>
-      <div class="heading-underline mx-auto mt-2"></div>
-    </div>
-    <div class="container content-container p-4 mt-4">
-      <h1>About UNL Baja SAE</h1>
-      <hr class="heading-line">
 
-      <image class="main-img" src="../images/image-20250615-183707-6cdb8ff7.jpg" alt="Image of team"
-        aria-label="Image of team"></image>
-      <p>
-        The University of Nebraska Lincoln's chapter, Husker Racing, has been in existence for over 20
-        years and is one of the most decorated and acclaimed teams in the Midwest region. Our team attends
-        at least one of the three U.S. competitions hosted. Husker Racing's success is built on the passion and
-        dedication of the members throughout the yearlong, intensive design and build seasons.
-      </p>
-      <p>
-        Husker Racing provides a hands-on experience that students cannot gain inside of a lecture
-        hall; this experience serves to help develop students with well-rounded professional skills in various
-        aspects of the engineering industry. Equally important, students actively build non-technical skills
-        vital
-        to professional engineering: program/timeline management, budgeting, interpersonal
-        communication, and conflict resolution.
-      </p>
-      <p>
-        At the University of Nebraska-Lincoln (UNL), Husker Racing accepts all students interested,
-        regardless of major, year, or background.
-      </p>
-    </div>
 
-    <div class="container content-container p-4 mt-4">
 
-      <h1>About Baja SAE</h1>
-      <hr class="heading-line">
+    <header class="page-header">
+      <div class="page-header-stripe"></div>
+      <div class="page-header-ghost">ABOUT</div>
 
-      <div class="row row-cols-1 row-cols-lg-2">
-        <div class="">
-          <image class="img-fluid" src="../images/SAE_International_logo.svg.png" alt="Baja SAE Logo"
-            aria-label="Baja SAE Logo"></image>
-        </div>
-        <div class="">
-          <p>
-            The International Collegiate design series has a division
-            known as Baja SAE (Society of Automotive Engineers). Baja
-            SAE consists of competitions that simulate real-world
-            engineering design projects and the related challenges. In
-            Baja SAE, students are tasked with designing and building an
-            all-terrain sporting vehicle. Each team's goal is to design and
-            build a prototype of an all-weather, rugged, single-seat,
-            off-road recreational vehicle. Which is intended for sale to the
-            nonprofessional weekend off-road enthusiast. As a team
-            students design, the limits of the rules. Like real work
-            situations, our future engineers work together as a team to
-            discover and resolve technical challenges in design, testing,
-            and manufacturing, as well as business issues. The most
-            rugged of all the SAE competition having both static and
-            dynamic events. Baja SAE gives students the first-hand
-            challenge of pursuing their passion while managing real-life
-            demands and priorities.
-          </p>
+      <div class="container page-header-content">
+        <div class="eyebrow eyebrow-light mb-3">Husker Racing</div>
+        <h1 class="page-title">
+          About <span class="page-title-accent">the Team</span>
+        </h1>
+        <p class="page-subtitle">Over 20 years of hands-on engineering, national competition, and building the next
+          generation of professional engineers. </p>
+      </div>
+    </header>
 
-          <a class="btn btn-outline-husker ms-auto" href="https://www.sae.org/events/student/about/baja"
-            target="_blank">Learn More <i class="bi bi-box-arrow-up-right"></i></a>
+
+
+    <section>
+      <div class="container mt-4">
+        <div class="row align-items-center">
+
+
+          <div class="col-lg-6 order-lg-2 d-flex justify-content-center mb-5 mb-lg-0 ">
+            <div class="section-img-wrap">
+              <div class="inner-container">
+                <img class="img-fluid" src="../images/image-20250615-183707-6cdb8ff7.jpg" alt="Team Photo">
+                <div class="section-img-caption">2026 Competition · Maryland</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 ">
+            <div class="section-content pt-sm-0">
+              <div class="eyebrow mb-3">About Husker Racing</div>
+              <h2 class="display-condensed section-title mb-0">Unl's Premier<br>Engineering Team</h2>
+              <div class="rule-red my-4"></div>
+              <p class="section-body">
+                The University of Nebraska Lincoln's chapter, Husker Racing, has been in existence for over 20
+                years and is one of the most decorated and acclaimed teams in the Midwest region. Our team attends
+                at least one of the three U.S. competitions hosted. Husker Racing's success is built on the passion
+                and
+                dedication of the members throughout the yearlong, intensive design and build seasons.
+              </p>
+              <p class="section-body">
+                Husker Racing provides a hands-on experience that students cannot gain inside of a lecture
+                hall; this experience serves to help develop students with well-rounded professional skills in various
+                aspects of the engineering industry. Equally important, students actively build non-technical skills
+                vital
+                to professional engineering: program/timeline management, budgeting, interpersonal
+                communication, and conflict resolution.
+              </p>
+              <p class="section-body">
+                At the University of Nebraska-Lincoln (UNL), Husker Racing accepts all students interested,
+                regardless of major, year, or background.
+              </p>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+
+    <section class="content-section p-4 pt-0">
+      <div class="container">
+        <div class="eyebrow mb-4">Beyond the Wrench</div>
+        <div class="row row-cols-3 row-cols-sm-1 justify-content-center gx-5 gy-3">
+
+          <div class="col-12 col-md-4">
+            <div class="value-card">
+              <div class="value-num">01</div>
+              <h3 class="value-title">Hands-on Experience</h3>
+              <p class="value-desc">We provide a practical learning environment that students cannot gain inside of a
+                lecture hall. This firsthand experience bridges the gap between theory and execution.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 ">
+            <div class="value-card">
+              <div class="value-num">02</div>
+              <h3 class="value-title">Professional Skills</h3>
+              <p class="value-desc">Students actively build non-technical skills vital to professional engineering:
+                program management, timeline management, budgeting, interpersonal communication, and conflict
+                resolution.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 ">
+            <div class="value-card">
+              <div class="value-num">03</div>
+              <h3 class="value-title">Open to All</h3>
+              <p class="value-desc">You do not have to be an engineer to join. We rely on business, design, and media
+                students to manage the real-life demands and priorities of running a successful racing organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ABOUT BAJA SAE -->
+    <section class="baja-section">
+      <div class="container">
+        <div class="row g-0 align-items-stretch">
+
+          <!-- Dark logo block -->
+          <div class="col-lg-4">
+
+            <div class="baja-logo-block">
+
+              <image class=" sae-logo" src="../images/SAE_International_logo.svg.png" alt="Baja SAE Logo"
+                aria-label="Baja SAE Logo"></image>
+              <div style="height:2px; width:100%; background:var(--scarlet); margin:1.5rem 0;"></div>
+
+              <div class="baja-logo-title">Baja <span style="color:var(--scarlet);">SAE</span></div>
+              <div class="baja-logo-sub">Society of Automotive Engineers</div>
+              <div style="height:2px; width:2rem; background:var(--scarlet); margin:1.5rem 0;"></div>
+              <p class="baja-body">
+                Part of the International Collegiate Design Series — the toughest off-road collegiate competition in
+                the world.
+              </p>
+              <a href="https://www.sae.org/events/student/about/baja" target="_blank" class="btn btn-scarlet mt-3"
+                style="font-size:0.7rem; padding:0.6rem 1.25rem;">
+                SAE Official Site →
+              </a>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="col-lg-8">
+            <div class="p-5" style=" background: #ffffff;; height: 100%;">
+              <div class="eyebrow mb-3">What is Baja SAE?</div>
+              <h3 class="display-condensed mb-0" style="font-size:clamp(1.75rem,4vw,2.75rem); color:var(--ink);">
+                Simulating Real-World<br>Engineering Challenges
+              </h3>
+              <div class="rule-red my-4"></div>
+              <p class="baja-body mb-4">
+                The International Collegiate Design Series has a division known as Baja SAE. These competitions
+                simulate real-world engineering design projects and the challenges that come with them. Students are
+                tasked with designing and building a single-seat, all-terrain sporting vehicle from the ground up.
+              </p>
+              <p class="baja-body mb-4">
+                Each team's goal is to design and build a prototype intended for sale to the nonprofessional weekend
+                off-road enthusiast — rugged, all-weather, and built to withstand everything a competition course
+                throws at it.
+              </p>
+              <p class="baja-body">
+                Like real engineering situations, students discover and resolve technical challenges in design,
+                testing, and manufacturing, as well as business issues. Baja SAE is the most demanding of all SAE
+                competitions — featuring both static (design, cost, and presentation) and dynamic (hill climb,
+                endurance, maneuverability) events.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="join-section">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <h2 class="display-condensed join-title">Are you up for<br> the challenge?</h2>
+            <p class="join-sub">We don't just build cars; we build engineers, leaders, and innovators. No experience is
+              required—just the drive to create something from nothing</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="../join/" class="btn btn-cream">Join Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 
-  <footer class="site-footer mt-5 py-4">
+  <footer class="site-footer">
     <div class="container text-center">
-      <div class="mb-2">
+      <div class="mb-3">
         <a href="https://www.facebook.com/huskerracing" target="_blank" class="footer-icon me-3" alt="Facebook"
           aria-label="Facebook">
           <i class="bi bi-facebook"></i>
@@ -139,7 +251,12 @@
           <i class="bi bi-envelope-fill"></i>
         </a>
       </div>
-      <p class="mb-0">© 2026 Husker Racing Baja SAE. All rights reserved.</p>
+      <p class="mb-2" style="font-size: 0.85rem; color: var(--mid); max-width: 600px; margin: 0 auto;">
+        Husker Racing is a Recognized Student Organization at the University of Nebraska Lincoln and is not an official
+        university department.
+      </p>
+      <p class="mb-0" style="font-size: 0.85rem; color: var(--mid);">© 2026 Husker Racing Baja SAE. All rights reserved.
+      </p>
     </div>
   </footer>
 

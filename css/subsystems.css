@@ -1,0 +1,80 @@
+.custom-accordion .accordion-item {
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color:oklch(0.97 0 360);
+}
+
+.custom-accordion .accordion-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.custom-accordion .accordion-button {
+    background: linear-gradient(135deg, var(--color-primary-dark), #c33);
+    color: var(--cream);
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.custom-accordion .faq .accordion-button {
+    text-transform: none;
+}
+
+.custom-accordion .accordion-button.collapsed {
+    background: var(--color-light-grey);
+    color: var(--ink);
+    border-top: 3px solid var(--color-primary-dark);
+}
+
+.custom-accordion .eyebrow{
+        margin-top: 1rem;
+
+}
+.custom-accordion .eyebrow::before {
+    content: none;
+}
+
+.accordian-stats {
+    background: var(--ink2);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 1rem
+}
+
+.accordian-stat {
+    border-top: 1px solid var(--mid);
+    color: var(--scarlet);
+
+}
+
+.accordian-stat:first-child{
+    border-top: none;
+
+}
+
+.accordian-stat .accordian-stat-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--cream-dk);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.accordian-stat .accordian-stat-body {
+    color: var(--cream-dkr);
+}
+
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    filter: invert(1);
+}
+
+.custom-accordion .accordion-button:focus {
+    box-shadow: 0 0 0 0.15rem rgba(208, 0, 0, 0.5);
+    outline: none;
+}

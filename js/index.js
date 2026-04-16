@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navbar = document.getElementById('mainNavbar');
-  const collapseEl = document.getElementById('navbarNav');
+  const navbar = document.getElementById('mainNav');
+  const collapseEl = document.getElementById('navMenu');
 
   function updateNavbar() {
     if (window.scrollY > 50 || collapseEl.classList.contains('show')) {
@@ -25,3 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
   updateNavbar();
 });
 
+const container = document.getElementById('image-gallery');
+window.lightGallery(container, {
+  licenseKey:"GPLv3",
+  selector: '.g-item',
+  plugins: [
+    lgZoom,
+    lgThumbnail
+  ],
+});

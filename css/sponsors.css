@@ -1,0 +1,37 @@
+.level-heading span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 0.75rem;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    padding: 0.3rem 0.9rem;
+    border-radius: 2px;
+
+}
+
+.tier-line {
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+
+.platinum span {
+    background-color: #b4b9d1;
+    color: var(--ink-2)
+}
+
+.gold span {
+    background-color: #b98724;
+    color: var(--cream-dk)
+}
+
+.silver span {
+    background-color: #E5E4E2;
+    color: var(--ink-2)
+}
+
+.bronze span {
+    background-color: #643a1e;
+    color: var(--cream)
+}

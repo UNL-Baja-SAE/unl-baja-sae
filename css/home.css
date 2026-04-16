@@ -1,0 +1,401 @@
+/* Countdown */
+.countdown-wrap {
+    background: var(--ink);
+    border-top: 3px solid var(--scarlet);
+}
+
+.countdown-tag {
+    background: var(--scarlet);
+    padding: 0 1.75rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--cream);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.count-unit {
+    padding: 1.25rem 0;
+    text-align: center;
+    border-left: 1px solid rgba(242, 235, 211, 0.07);
+}
+
+.count-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.8rem, 5vw, 2.75rem);
+    line-height: 1;
+    color: var(--cream);
+    overflow: hidden;
+}
+
+.count-lbl {
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.18rem;
+    text-transform: uppercase;
+    color: rgba(242, 235, 211, 0.3);
+    margin-top: 0.25rem;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   9. Subsystems & Diagrams
+   ========================================================================== */
+.sub-section {
+    padding-top: 4.5rem;
+}
+
+.sub-header {
+    padding: 0 3rem 2.5rem;
+}
+
+.sub-diagram {
+    overflow: hidden;
+    background: var(--ink2);
+    background-image: radial-gradient(circle, rgba(242, 235, 211, 0.06) 1px, transparent 1px);
+    background-size: 28px 28px;
+    border-top: 2px solid var(--scarlet-dk);
+}
+
+.diagram-inner {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.sub-car-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sub-marker {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.marker-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgba(204, 0, 0, 0.2);
+    border: 2px solid var(--scarlet);
+    transition: background .2s, transform .2s;
+}
+
+.marker-dot::after {
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 1px solid rgba(204, 0, 0, 0.2);
+}
+
+.sub-marker:hover .marker-dot,
+.sub-marker.active .marker-dot {
+    background: var(--scarlet);
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.marker-pill {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    background: var(--ink);
+    color: rgba(242, 235, 211, 0.7);
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid rgba(242, 235, 211, 0.12);
+    white-space: nowrap;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: background .2s, color .2s, border-color .2s;
+}
+
+.sub-marker:hover .marker-pill,
+.sub-marker.active .marker-pill {
+    background: var(--scarlet);
+    color: var(--cream);
+    border-color: var(--scarlet);
+}
+
+.m-chassis     { top: 12%; left: 22%; }
+.m-suspension  { bottom: 43%; right: 41%; }
+.m-powertrain  { bottom: 59%; left: 22%; }
+.m-controls    { top: 32%; right: 50%; }
+.m-body        { top: 51%; left: 45%; }
+.m-electronics { top: 5.5%; right: 38%; }
+
+.m-chassis .marker-pill,
+.m-body .marker-pill {
+    left: auto;
+    right: 15px;
+}
+
+.sub-panel {
+    background: var(--ink);
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-panel-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-panel-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: opacity .3s;
+}
+
+.sub-panel-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, transparent 60%);
+}
+
+.sub-panel-body {
+    padding: 1.75rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--scarlet);
+    margin-bottom: 0.35rem;
+}
+
+.sub-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--cream);
+}
+
+.sub-rule {
+    width: 1.5rem;
+    height: 2px;
+    background: var(--scarlet);
+    margin: 0.9rem 0;
+}
+
+.sub-desc {
+    font-size: 0.8rem;
+    color: rgba(242, 235, 211, 0.5);
+    line-height: 1.8;
+    flex: 1;
+}
+
+.sub-link {
+    flex: 1;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    color: var(--scarlet);
+    text-decoration: none;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(242, 235, 211, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap .2s;
+}
+
+.sub-link:hover {
+    gap: 0.9rem;
+}
+
+.sub-tabs {
+    display: flex;
+    border-top: 1px solid rgba(242, 235, 211, 0.07);
+}
+
+.sub-tab {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+    color: rgba(242, 235, 211, 0.3);
+    background: none;
+    border: 1px solid rgba(242, 235, 211, 0.07);
+    cursor: pointer;
+    transition: color .2s, background .2s;
+}
+
+.sub-tab:last-child {
+    border-right: none;
+}
+
+.sub-tab.active {
+    color: var(--cream);
+    background: rgba(204, 0, 0, 0.15);
+}
+
+.sub-tab:hover:not(.active) {
+    color: rgba(242, 235, 211, 0.65);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+    filter: brightness(0.7);
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 75%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4.5rem;
+}
+
+.hero-title {
+    font-size: clamp(3.5rem, 10vw, 7.5rem);
+    color: var(--cream);
+    letter-spacing: -0.03em;
+}
+
+.hero-title em {
+    color: var(--scarlet);
+    font-style: normal;
+}
+
+.hero-sub {
+    font-size: 0.95rem;
+    color: rgba(242, 235, 211, 0.55);
+    max-width: 26rem;
+    line-height: 1.8;
+}
+
+.hero-scroll {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 3rem;
+    background: rgba(242, 235, 211, 0.2);
+}
+
+.scroll-text {
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: rgba(242, 235, 211, 0.25);
+    writing-mode: vertical-rl;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+#mainNav {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+#mainNav.scrolled {
+    background-color: rgba(0, 0, 0, 1) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid var(--scarlet);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.95);
+        z-index: 1050;
+    }
+
+    .navbar-collapse .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem 0;
+        padding-right: 0.5rem;
+        transition: none;
+        color: var(--scarlet) !important;
+    }
+
+    .navbar-collapse .btn {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #mainNavbar {
+        padding-right: 1rem;
+    }
+    .page-header-content {
+        margin-left: 1rem;
+    }
+}
