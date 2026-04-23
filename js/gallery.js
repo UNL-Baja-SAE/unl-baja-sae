@@ -1,11 +1,10 @@
-
 function renderImages(images) {
     const container = document.getElementById('bootstrap-image-gallery'); // Make sure this ID exists in your HTML
     container.innerHTML = ''; // Clear existing content
     if(images.length == 0){
         const div = document.createElement('div');
-        div.textContent = "Whoops! No Images Found as of right now, try coming back later!"
-        div.classList.add("text-center","m-5","p-5","w-100");
+        div.textContent = "Whoops! No images found as of right now, try coming back later!"
+        div.classList.add("text-center","p-4","col-12","my-5");
         container.appendChild(div);
     }
     images.forEach(img => {
@@ -51,12 +50,19 @@ async function loadImages(category) {
 
     // 2. If not, fetch it from your Worker
     // Note the use of the versioning 'v' to bust the cache when needed
-    const response = await fetch(`https://husker-baja.org/api/images?category=${category}&v=2`);
-    const data = await response.json();
-
+    var images;
+    try{
+        const response = await fetch(`https://husker-baja.org/api/images?category=${category}&v=2`);
+        const data = await response.json();
+    
     // 3. Save it to storage for next time
-    sessionStorage.setItem(cacheKey, JSON.stringify(data));
-    renderImages(data);
+        sessionStorage.setItem(cacheKey, JSON.stringify(data));
+        images = data
+
+    }catch{
+        images=[]
+    }
+    renderImages(images)
 }
 
 function openGallery(category) {
